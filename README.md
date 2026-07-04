@@ -1,2 +1,49 @@
-# agit-documentation-template
-Template for AI-assisted technical documentation with repository-first workflows, link discipline, screenshots, visual QA, and documented decisions
+# AGIT Documentation Template
+
+Template for AI-assisted technical documentation in AGIT contexts, with repository-first workflows, link discipline, screenshots, visual QA, and documented decisions.
+
+This repository provides a starting point for technical documentation projects that should be maintained with the same rigor as software and scientific writing projects: explicit context, clear ownership, reproducible collaboration, documented decisions, and reviewable milestones.
+
+German README: [README.de.md](README.de.md)
+
+## Core principle
+
+The maintainer owns the documentation intent, structure, technical correctness, audience fit, and final publication decision at all times. The AI assistant supports drafting, consistency checks, link discipline, screenshot and visual QA, structural feedback, and repository maintenance, but does not replace maintainer judgment.
+
+## What this template is for
+
+Use this template for documentation projects such as:
+
+- User guides, admin guides, and operating procedures.
+- Technical concepts, architecture notes, and implementation documentation.
+- Troubleshooting, migration, setup, and release documentation.
+- Documentation systems that combine prose, screenshots, diagrams, links, and generated output.
+
+## Repository workflow
+
+1. Start from [INITIAL_PROMPT.md](INITIAL_PROMPT.md).
+2. Complete [PROJECT_SETUP.md](PROJECT_SETUP.md) and [DOCS_SETUP.md](DOCS_SETUP.md).
+3. Define project-specific context in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
+4. Establish audience, structure, link, screenshot, and visual QA rules.
+5. Draft documentation in small, reviewable increments.
+6. Record substantial documentation decisions as DDRs.
+7. Close meaningful milestones with changelog, version, and consistency review.
+
+## Important files
+
+- [ChatGPT.md](ChatGPT.md): Versioned AI collaboration model.
+- [CODEX.md](CODEX.md): Local assistant operating rules.
+- [DOCUMENTATION.md](DOCUMENTATION.md): Documentation architecture and file roles.
+- [PROJECT_SETUP.md](PROJECT_SETUP.md): Initialization workflow for derived projects.
+- [DOCS_SETUP.md](DOCS_SETUP.md): Documentation-specific setup checklist.
+- [DOCUMENTATION_PROCESS.md](DOCUMENTATION_PROCESS.md): Ongoing documentation workflow.
+- [AUDIENCE.md](AUDIENCE.md): Audience model template.
+- [STYLE_GUIDE.md](STYLE_GUIDE.md): Technical documentation style principles.
+- [SCREENSHOTS.md](SCREENSHOTS.md): Screenshot and visual evidence rules.
+- [LINKS.md](LINKS.md): Link and reference discipline.
+- [VISUAL_QA.md](VISUAL_QA.md): Visual QA checklist.
+- [DDR/](DDR/): Documentation Decision Records.
+
+## License
+
+This template is distributed under the MIT License. See [LICENSE](LICENSE).
