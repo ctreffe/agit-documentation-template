@@ -24,10 +24,25 @@ Das Template eignet sich fuer Dokumentationsprojekte wie:
 1. Mit [INITIAL_PROMPT.md](INITIAL_PROMPT.md) starten.
 2. [PROJECT_SETUP.md](PROJECT_SETUP.md) und [DOCS_SETUP.md](DOCS_SETUP.md) ausfuellen.
 3. Projektspezifischen Kontext in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) festhalten.
-4. Dokumentationstyp, Zielgruppe, Zweisprachigkeit, Struktur, Links, Screenshots und Visual-QA festlegen.
+4. Dokumentationstyp, Zielgruppe, Zweisprachigkeit, Quarto-Struktur, Links, Screenshots und Visual-QA festlegen.
 5. Dokumentation in kleinen, pruefbaren Schritten erarbeiten.
 6. Wichtige Dokumentationsentscheidungen als DDRs festhalten.
 7. Sinnvolle Meilensteine mit Changelog, Version und Konsistenzpruefung abschliessen.
+
+## Maintainer-Setup
+
+Fuer ein neues Codex-basiertes Dokumentationsprojekt empfiehlt sich diese Reihenfolge:
+
+1. Neues Repository aus diesem Template erzeugen und lokal klonen.
+2. Das Repository als aktiven Codex-Workspace oeffnen.
+3. Quarto CLI von <https://quarto.org/docs/get-started/> installieren.
+4. Neues Terminal oeffnen und Quarto mit `quarto --version` pruefen.
+5. Falls PDF-Output benoetigt wird, eine TeX-Toolchain installieren, zum Beispiel mit `quarto install tinytex`.
+6. Quarto-Baseline mit `quarto render` pruefen.
+7. Projektinitialisierung mit [INITIAL_PROMPT.md](INITIAL_PROMPT.md) starten.
+8. [PROJECT_SETUP.md](PROJECT_SETUP.md), [DOCS_SETUP.md](DOCS_SETUP.md) und [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) ausfuellen.
+
+R und RStudio sind sinnvoll, wenn die Dokumentation R-Code, Datenanalysen, Plots oder R-basierte Quarto-Erweiterungen enthaelt. Fuer einfache Markdown-basierte Dokumentation sind sie nicht zwingend erforderlich.
 
 ## Zentrale Dateien
 
@@ -38,6 +53,7 @@ Das Template eignet sich fuer Dokumentationsprojekte wie:
 - [DOCS_SETUP.md](DOCS_SETUP.md): Dokumentationsspezifische Setup-Checkliste.
 - [DOCUMENTATION_PROCESS.md](DOCUMENTATION_PROCESS.md): Laufender Dokumentationsprozess.
 - [DOCUMENTATION_TYPE_PROFILES.md](DOCUMENTATION_TYPE_PROFILES.md): Dokumentationstyp-Profile, einschliesslich Tutorial-Profil.
+- [QUARTO.md](QUARTO.md): Quarto als bevorzugtes internes Dokumentationsformat.
 - [AUDIENCE.md](AUDIENCE.md): Vorlage fuer das Zielgruppenmodell.
 - [STYLE_GUIDE.md](STYLE_GUIDE.md): Stilprinzipien technischer Dokumentation.
 - [SCREENSHOTS.md](SCREENSHOTS.md): Regeln fuer Screenshots und visuelle Belege.

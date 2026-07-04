@@ -5,7 +5,7 @@ Use this as the first prompt after creating a concrete documentation project fro
 ```text
 We are initializing a new technical documentation project from the AGIT Documentation Template.
 
-Please first read the complete repository and all relevant project rules, especially README.md, ChatGPT.md, CODEX.md, DOCUMENTATION.md, REPOSITORY.md, PROJECT_SETUP.md, DOCS_SETUP.md, PROJECT_CONTEXT.md, DOCUMENTATION_TYPE_PROFILES.md, AUDIENCE.md, STYLE_GUIDE.md, SCREENSHOTS.md, LINKS.md, VISUAL_QA.md, and the DDR guidance.
+Please first read the complete repository and all relevant project rules, especially README.md, ChatGPT.md, CODEX.md, DOCUMENTATION.md, REPOSITORY.md, PROJECT_SETUP.md, DOCS_SETUP.md, PROJECT_CONTEXT.md, DOCUMENTATION_TYPE_PROFILES.md, QUARTO.md, AUDIENCE.md, STYLE_GUIDE.md, SCREENSHOTS.md, LINKS.md, VISUAL_QA.md, and the DDR guidance.
 
 Then perform a structured initialization following PROJECT_SETUP.md and DOCS_SETUP.md.
 
@@ -16,11 +16,13 @@ Ask me for all missing maintainer decisions, including:
 - Documentation type and documentation type profile.
 - Whether the project is bilingual, and if so, which language is authoritative.
 - Documentation purpose and scope.
+- For tutorials or instructions: the concrete starting point and goal.
 - Target audience and expected prior knowledge.
 - Required outputs and publication context.
+- Quarto project type, output formats, CLI availability, PATH status, and render expectations.
 - Existing source material and sensitivity constraints.
 - Screenshot, diagram, visual QA, and link expectations.
 - Repository files that should remain template documentation, be adapted, be marked completed, or be removed.
 
-After collecting the required information, update the repository files to reflect the concrete project. Prepare, but do not execute, an initialization commit unless I explicitly ask you to commit.
+After collecting the required information, update the repository files to reflect the concrete project, including `_quarto.yml` and the files in `docs/` when Quarto is used. Prepare, but do not execute, an initialization commit unless I explicitly ask you to commit.
 ```

@@ -4,14 +4,27 @@ All notable changes to this template will be documented in this file.
 
 ## [Unreleased]
 
+No unreleased changes yet.
+
+## [v0.2.0] - 2026-07-04
+
 ### Added
 
+- Quarto as the preferred internal documentation format with a dedicated `docs/` source directory.
+- Quarto CLI installation guidance and official setup link.
+- Maintainer setup guidance for Codex-based documentation projects.
+- Explicit TinyTeX/TeX guidance for PDF rendering.
+- Quarto render scope limited to `docs/**/*.qmd` by default.
+- Minimal Quarto website configuration and bilingual starter pages.
 - Documentation type profile model with an initial tutorial profile.
+- Start-goal framing for tutorials and instructions.
 - Bilingual documentation guidance.
+- Default convention for parallel German and English Quarto files.
 
 ### Changed
 
 - Strengthened audience-first setup and tutorial-specific QA guidance.
+- Updated the AGIT Documentation Collaboration Model to v0.2.0.
 
 ## [v0.1.0] - 2026-07-04
 

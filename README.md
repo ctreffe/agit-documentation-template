@@ -24,10 +24,25 @@ Use this template for documentation projects such as:
 1. Start from [INITIAL_PROMPT.md](INITIAL_PROMPT.md).
 2. Complete [PROJECT_SETUP.md](PROJECT_SETUP.md) and [DOCS_SETUP.md](DOCS_SETUP.md).
 3. Define project-specific context in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
-4. Establish documentation type, audience, bilingual needs, structure, link, screenshot, and visual QA rules.
+4. Establish documentation type, audience, bilingual needs, Quarto structure, link, screenshot, and visual QA rules.
 5. Draft documentation in small, reviewable increments.
 6. Record substantial documentation decisions as DDRs.
 7. Close meaningful milestones with changelog, version, and consistency review.
+
+## Maintainer setup
+
+For a new Codex-based documentation project, use this setup sequence:
+
+1. Create a new repository from this template and clone it locally.
+2. Open the repository as the active Codex workspace.
+3. Install the Quarto CLI from <https://quarto.org/docs/get-started/>.
+4. Open a new terminal and verify Quarto with `quarto --version`.
+5. If PDF output is required, install a TeX toolchain, for example with `quarto install tinytex`.
+6. Verify the Quarto baseline with `quarto render`.
+7. Start project initialization with [INITIAL_PROMPT.md](INITIAL_PROMPT.md).
+8. Complete [PROJECT_SETUP.md](PROJECT_SETUP.md), [DOCS_SETUP.md](DOCS_SETUP.md), and [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
+
+R and RStudio are useful when the documentation includes R code, data analysis, plots, or R-based Quarto extensions, but they are not required for simple Markdown-based documentation.
 
 ## Important files
 
@@ -38,6 +53,7 @@ Use this template for documentation projects such as:
 - [DOCS_SETUP.md](DOCS_SETUP.md): Documentation-specific setup checklist.
 - [DOCUMENTATION_PROCESS.md](DOCUMENTATION_PROCESS.md): Ongoing documentation workflow.
 - [DOCUMENTATION_TYPE_PROFILES.md](DOCUMENTATION_TYPE_PROFILES.md): Documentation type profiles, including the tutorial profile.
+- [QUARTO.md](QUARTO.md): Quarto as the preferred internal documentation format.
 - [AUDIENCE.md](AUDIENCE.md): Audience model template.
 - [STYLE_GUIDE.md](STYLE_GUIDE.md): Technical documentation style principles.
 - [SCREENSHOTS.md](SCREENSHOTS.md): Screenshot and visual evidence rules.

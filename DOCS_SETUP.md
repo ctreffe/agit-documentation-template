@@ -12,7 +12,7 @@ Use this checklist to define the documentation project before substantive drafti
 
 ## Documentation type
 
-Select one or more and record the selected profile in `PROJECT_CONTEXT.md`. Use `DOCUMENTATION_TYPE_PROFILES.md` for profile-specific structure and QA guidance. If the project is a tutorial, define the reader task, starting state, expected result, and verification standard before drafting.
+Select one or more and record the selected profile in `PROJECT_CONTEXT.md`. Use `DOCUMENTATION_TYPE_PROFILES.md` for profile-specific structure and QA guidance. If the project is a tutorial, define the starting point, goal, reader task, expected result, and verification standard before drafting.
 
 Select one or more:
 
@@ -82,9 +82,21 @@ Define:
 
 - Primary working language.
 - Publication languages.
-- Whether German and English are maintained in parallel.
+- Whether German and English are maintained in parallel. The default is parallel files, for example `topic.qmd` and `topic.de.qmd`.
 - Whether one language is authoritative.
 - How terminology and screenshots are checked across languages.
+
+## Quarto model
+
+Define:
+
+- Whether Quarto is used as the internal source format.
+- Whether the project is a website, single document, book, or mixed Quarto project.
+- Required output formats, usually HTML and/or PDF.
+- Whether `docs/index.qmd` and `docs/index.de.qmd` remain parallel entry points. This is the default bilingual structure.
+- Required Quarto CLI installation and PATH status.
+- Required R, Python, LaTeX, TinyTeX, or Quarto extensions. If PDF output is required, confirm TeX/TinyTeX during setup.
+- Whether `quarto render` should be part of milestone QA.
 
 ## Initial output
 
@@ -92,6 +104,7 @@ Before the first substantive documentation milestone, the repository should cont
 
 - Completed `PROJECT_CONTEXT.md`.
 - Selected documentation type profile and language model.
+- Confirmed Quarto model and output formats.
 - Adapted audience, style, screenshot, link, and visual QA rules.
 - Initial documentation structure.
 - Any required DDRs.

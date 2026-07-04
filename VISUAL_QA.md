@@ -20,6 +20,10 @@ Use this checklist before publishing or closing a documentation milestone that i
 - Diagram is not more detailed than the reader needs.
 - Source or generation method is documented when relevant.
 
+## Quarto rendered outputs
+
+When Quarto is used, run `quarto render` before milestone closure if the local toolchain is available. HTML is the default baseline render. PDF render checks require a TeX toolchain such as TinyTeX. Check the generated outputs required by the project.
+
 ## Rendered outputs
 
 - Headings, lists, tables, code blocks, and images render correctly.

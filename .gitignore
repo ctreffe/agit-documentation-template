@@ -18,6 +18,9 @@ Desktop.ini
 tmp/
 
 # Generated documentation artifacts
+_site/
+.quarto/
+*_files/
 exports/
 renders/
 previews/
@@ -33,3 +36,6 @@ screenshots/raw/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/.quarto/
+**/*.quarto_ipynb

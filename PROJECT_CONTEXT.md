@@ -11,6 +11,7 @@ This file is a template. In a derived documentation project, replace the placeho
 - Documentation type profile: TBD
 - Primary working language: TBD
 - Publication languages: TBD
+- Bilingual file model: parallel files, e.g. `topic.qmd` and `topic.de.qmd`
 - Authoritative language, if any: TBD
 - Version or milestone: TBD
 
@@ -61,6 +62,13 @@ Potentially sensitive materials:
 Sanitization or redaction rules:
 
 - TBD
+
+## Quarto model
+
+- Quarto project type: TBD
+- Required output formats: TBD
+- Render command: `quarto render`
+- Required toolchain notes: TBD
 
 ## Documentation structure
 

@@ -20,6 +20,9 @@ This repository follows a repository-first documentation workflow. Durable conte
 - `DDR/`: Documentation Decision Records.
 - `CHANGELOG.md`: Version history.
 - `VERSION`: Current template or project version.
+- `_quarto.yml`: Quarto project configuration.
+- `docs/`: Maintained Quarto source files.
+- `assets/`: Maintained screenshots, figures, and diagrams.
 
 ## Inputs, maintained files, and outputs
 
@@ -27,7 +30,7 @@ Separate these categories clearly:
 
 - Raw inputs: screenshots, logs, exports, tickets, notes, source documents, and operational data.
 - Sanitized inputs: redacted or transformed versions that may be used safely.
-- Maintained documentation: source files that represent the project documentation.
+- Maintained documentation: Quarto source files and supporting Markdown that represent the project documentation.
 - Generated outputs: rendered HTML, PDFs, screenshots, previews, or release artifacts.
 
 Raw inputs and generated outputs should not be committed by default unless the project explicitly needs them and they have been reviewed.

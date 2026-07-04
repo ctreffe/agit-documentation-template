@@ -34,7 +34,7 @@ A bilingual project should define:
 
 - Primary working language.
 - Publication languages.
-- Whether German and English files are maintained in parallel.
+- Whether German and English files are maintained in parallel. The default is parallel files using `.de` for German counterparts.
 - Whether one language is authoritative and the other is a translation.
 - How terminology consistency is checked across languages.
 - How screenshots are handled when UI language differs from documentation language.
@@ -45,9 +45,11 @@ Bilingual documentation should not become two diverging documentation systems. E
 
 A tutorial teaches a reader how to complete a concrete task or workflow. It is especially important when the target audience includes less experienced users.
 
+Every tutorial needs a clearly defined starting point and a clearly defined goal before the procedure is written. The tutorial itself is the guided path from that starting point to that goal.
+
 ### Purpose
 
-A tutorial should help readers reach a meaningful result with enough guidance that they can follow the path without already understanding the whole system.
+A tutorial should help readers move from a defined starting point to a meaningful result with enough guidance that they can follow the path without already understanding the whole system.
 
 A tutorial should not merely describe features. It should guide a reader through a sequence of actions and explain the necessary context at the point where it becomes relevant.
 
@@ -60,6 +62,8 @@ Tutorials require explicit audience decisions. Before drafting a tutorial, defin
 - Which terms need explanation.
 - Which actions are obvious to expert users but not to this audience.
 - Which mistakes or misunderstandings are likely.
+- Where readers start.
+- What concrete goal readers should reach.
 - What successful completion looks like for the reader.
 
 For less experienced users, the documentation should reduce hidden assumptions. It should name prerequisites, navigation paths, visible UI labels, expected screen states, and verification steps.
@@ -68,14 +72,15 @@ For less experienced users, the documentation should reduce hidden assumptions. 
 
 A tutorial usually benefits from this structure:
 
-1. Goal.
-2. Audience and prerequisites.
-3. Starting state.
-4. Required materials, permissions, or setup.
-5. Step-by-step procedure.
-6. Expected result.
-7. Verification.
-8. Common problems or next steps.
+1. Starting point.
+2. Goal.
+3. Audience and prerequisites.
+4. Starting state.
+5. Required materials, permissions, or setup.
+6. Step-by-step procedure.
+7. Expected result.
+8. Verification.
+9. Common problems or next steps.
 
 The structure may be adapted when the topic requires a different flow.
 
@@ -98,6 +103,8 @@ Avoid screenshots that are visually impressive but do not help the reader act.
 Before a tutorial milestone, check:
 
 - The target audience is explicit.
+- The starting point is explicit.
+- The goal is explicit.
 - Prerequisites are complete.
 - Steps can be followed in order.
 - UI labels and navigation paths match the actual interface.

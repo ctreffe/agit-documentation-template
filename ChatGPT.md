@@ -1,4 +1,4 @@
-# AGIT Documentation Collaboration Model v0.1.0
+# AGIT Documentation Collaboration Model v0.2.0
 
 This file defines the collaboration model for AI-assisted technical documentation projects derived from this template.
 
@@ -32,9 +32,15 @@ At initialization, the assistant must ask what type of technical documentation i
 
 The assistant must also ask who the documentation is for, what they already know, what they should not be expected to know, what tasks they need to complete, and what misunderstandings or operational risks the documentation must prevent. Audience decisions should shape structure, detail level, screenshots, examples, and QA.
 
-For bilingual documentation, the assistant must ask which languages are required, whether one language is authoritative, and how parallel documents should be kept aligned.
+For bilingual documentation, the assistant must ask which languages are required, whether one language is authoritative, and how parallel documents should be kept aligned. The default AGIT convention is parallel Quarto files, for example `topic.qmd` and `topic.de.qmd`.
 
-## 5. Sensitive information and screenshots
+## 5. Quarto documentation format
+
+AGIT documentation projects use Quarto Markdown (`.qmd`) as the preferred internal documentation format unless a project-specific reason argues against it. The assistant should treat `_quarto.yml`, `docs/`, and maintained assets as part of the documentation source system.
+
+Before milestones, the assistant should attempt Quarto rendering when the local toolchain is available and report clearly if rendering was not possible.
+
+## 6. Sensitive information and screenshots
 
 Technical documentation often contains screenshots, URLs, system names, logs, user data, configuration values, tickets, and internal process details. These materials must be treated as potentially sensitive until the maintainer confirms otherwise.
 
@@ -42,31 +48,31 @@ Before reading or incorporating raw sources, screenshots, exports, logs, or oper
 
 Screenshots and visual artifacts should be reviewed for sensitive information before they are committed or published.
 
-## 6. Link and source discipline
+## 7. Link and source discipline
 
 Links are part of the documentation evidence model. Internal links should support navigation and maintainability. External links should be explicit, stable where possible, and checked when documentation is prepared for a milestone.
 
 The assistant should avoid vague link text such as "here" when a descriptive label is possible.
 
-## 7. Visual documentation discipline
+## 8. Visual documentation discipline
 
 Screenshots, diagrams, and visual examples should clarify real tasks, states, decisions, or interfaces. They should not be decorative filler.
 
 Visual artifacts should be current, readable, consistently named, and connected to the text that uses them. If a visual is generated or edited, the repository should make that status clear.
 
-## 8. Decisions
+## 9. Decisions
 
 Substantive documentation decisions should be recorded as Documentation Decision Records (DDRs). A DDR is appropriate when a decision affects documentation structure, audience assumptions, terminology, screenshot policy, link model, visual standards, publication workflow, or milestone scope.
 
 DDRs are not a substitute for concise documentation. They preserve why important choices were made.
 
-## 9. Git history
+## 10. Git history
 
 The assistant may inspect git history and status to understand the project. The assistant must not create commits, rewrite history, drop stashes, reset branches, or push changes unless the maintainer explicitly asks for that action.
 
 Regular commits should use Conventional Commits, for example `docs: refine screenshot guidance`. Milestone commits are the exception: they should be descriptive, omit a Conventional Commit prefix, and include the version number, for example `Initialize AGIT Documentation Template (v0.1.0)`.
 
-## 10. Milestones
+## 11. Milestones
 
 A milestone should close with:
 
