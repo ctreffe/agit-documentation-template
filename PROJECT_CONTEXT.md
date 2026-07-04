@@ -8,6 +8,10 @@ This file is a template. In a derived documentation project, replace the placeho
 - Repository: TBD
 - Maintainer: TBD
 - Documentation type: TBD
+- Documentation type profile: TBD
+- Primary working language: TBD
+- Publication languages: TBD
+- Authoritative language, if any: TBD
 - Version or milestone: TBD
 
 ## Documentation purpose
@@ -25,6 +29,8 @@ Out of scope:
 - TBD
 
 ## Audience
+
+Audience decisions should drive structure, detail level, terminology, examples, screenshots, and verification depth.
 
 Primary audience:
 

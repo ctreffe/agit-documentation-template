@@ -4,7 +4,14 @@ All notable changes to this template will be documented in this file.
 
 ## [Unreleased]
 
-No unreleased changes yet.
+### Added
+
+- Documentation type profile model with an initial tutorial profile.
+- Bilingual documentation guidance.
+
+### Changed
+
+- Strengthened audience-first setup and tutorial-specific QA guidance.
 
 ## [v0.1.0] - 2026-07-04
 

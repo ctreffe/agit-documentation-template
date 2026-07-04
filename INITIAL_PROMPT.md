@@ -5,7 +5,7 @@ Use this as the first prompt after creating a concrete documentation project fro
 ```text
 We are initializing a new technical documentation project from the AGIT Documentation Template.
 
-Please first read the complete repository and all relevant project rules, especially README.md, ChatGPT.md, CODEX.md, DOCUMENTATION.md, REPOSITORY.md, PROJECT_SETUP.md, DOCS_SETUP.md, PROJECT_CONTEXT.md, AUDIENCE.md, STYLE_GUIDE.md, SCREENSHOTS.md, LINKS.md, VISUAL_QA.md, and the DDR guidance.
+Please first read the complete repository and all relevant project rules, especially README.md, ChatGPT.md, CODEX.md, DOCUMENTATION.md, REPOSITORY.md, PROJECT_SETUP.md, DOCS_SETUP.md, PROJECT_CONTEXT.md, DOCUMENTATION_TYPE_PROFILES.md, AUDIENCE.md, STYLE_GUIDE.md, SCREENSHOTS.md, LINKS.md, VISUAL_QA.md, and the DDR guidance.
 
 Then perform a structured initialization following PROJECT_SETUP.md and DOCS_SETUP.md.
 
@@ -13,7 +13,8 @@ Before reading or incorporating any raw screenshots, logs, exports, tickets, sou
 
 Ask me for all missing maintainer decisions, including:
 
-- Documentation type.
+- Documentation type and documentation type profile.
+- Whether the project is bilingual, and if so, which language is authoritative.
 - Documentation purpose and scope.
 - Target audience and expected prior knowledge.
 - Required outputs and publication context.

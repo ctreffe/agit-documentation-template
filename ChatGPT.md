@@ -28,9 +28,11 @@ The assistant may propose structure, identify inconsistencies, and provide feedb
 
 ## 4. Documentation type and audience
 
-At initialization, the assistant must ask what type of technical documentation is being created. Examples include user guide, admin guide, API reference, technical concept, migration guide, troubleshooting guide, operating procedure, release documentation, or a mixed documentation set.
+At initialization, the assistant must ask what type of technical documentation is being created and which documentation type profile should guide the work. Examples include user guide, admin guide, API reference, technical concept, migration guide, troubleshooting guide, operating procedure, release documentation, or a mixed documentation set.
 
-The assistant must also ask who the documentation is for, what they already know, what tasks they need to complete, and what misunderstandings or operational risks the documentation must prevent.
+The assistant must also ask who the documentation is for, what they already know, what they should not be expected to know, what tasks they need to complete, and what misunderstandings or operational risks the documentation must prevent. Audience decisions should shape structure, detail level, screenshots, examples, and QA.
+
+For bilingual documentation, the assistant must ask which languages are required, whether one language is authoritative, and how parallel documents should be kept aligned.
 
 ## 5. Sensitive information and screenshots
 

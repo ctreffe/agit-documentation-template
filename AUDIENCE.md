@@ -1,6 +1,6 @@
 # Audience Model
 
-This file is a template for defining the audience of a technical documentation project.
+This file is a template for defining the audience of a technical documentation project. Audience definition is not secondary metadata; it determines structure, detail level, terminology, screenshots, examples, and QA criteria.
 
 ## Primary audience
 
@@ -19,6 +19,18 @@ Readers are expected to know:
 Readers should not be expected to know:
 
 - TBD
+
+## Experience level
+
+Define whether the audience is expert, intermediate, occasional, new, or mixed. For tutorials and guides for less experienced users, list hidden assumptions that must be made explicit.
+
+Readers may need explicit support for:
+
+- Navigation.
+- Terminology.
+- Permissions and prerequisites.
+- Recognizing expected screen states.
+- Verifying successful completion.
 
 ## Reader tasks
 

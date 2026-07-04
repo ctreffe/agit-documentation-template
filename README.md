@@ -24,7 +24,7 @@ Use this template for documentation projects such as:
 1. Start from [INITIAL_PROMPT.md](INITIAL_PROMPT.md).
 2. Complete [PROJECT_SETUP.md](PROJECT_SETUP.md) and [DOCS_SETUP.md](DOCS_SETUP.md).
 3. Define project-specific context in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
-4. Establish audience, structure, link, screenshot, and visual QA rules.
+4. Establish documentation type, audience, bilingual needs, structure, link, screenshot, and visual QA rules.
 5. Draft documentation in small, reviewable increments.
 6. Record substantial documentation decisions as DDRs.
 7. Close meaningful milestones with changelog, version, and consistency review.
@@ -37,6 +37,7 @@ Use this template for documentation projects such as:
 - [PROJECT_SETUP.md](PROJECT_SETUP.md): Initialization workflow for derived projects.
 - [DOCS_SETUP.md](DOCS_SETUP.md): Documentation-specific setup checklist.
 - [DOCUMENTATION_PROCESS.md](DOCUMENTATION_PROCESS.md): Ongoing documentation workflow.
+- [DOCUMENTATION_TYPE_PROFILES.md](DOCUMENTATION_TYPE_PROFILES.md): Documentation type profiles, including the tutorial profile.
 - [AUDIENCE.md](AUDIENCE.md): Audience model template.
 - [STYLE_GUIDE.md](STYLE_GUIDE.md): Technical documentation style principles.
 - [SCREENSHOTS.md](SCREENSHOTS.md): Screenshot and visual evidence rules.

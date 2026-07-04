@@ -17,6 +17,7 @@ Template files describe how a documentation project should be initialized, maint
 - `DOCS_SETUP.md`: Documentation-specific setup checklist.
 - `PROJECT_CONTEXT.md`: Project memory template.
 - `DOCUMENTATION_PROCESS.md`: Ongoing documentation workflow.
+- `DOCUMENTATION_TYPE_PROFILES.md`: Documentation type profiles and profile-specific QA guidance.
 - `AUDIENCE.md`: Audience model template.
 - `STYLE_GUIDE.md`: Writing and style guidance for technical documentation.
 - `SCREENSHOTS.md`: Screenshot and visual artifact guidance.

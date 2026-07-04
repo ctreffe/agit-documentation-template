@@ -4,11 +4,11 @@ The documentation process is iterative. Each iteration should leave the reposito
 
 ## 1. Setup
 
-Clarify documentation type, purpose, audience, source material, sensitivity constraints, visuals, links, output formats, and review expectations.
+Clarify documentation type profile, purpose, audience, language model, source material, sensitivity constraints, visuals, links, output formats, and review expectations.
 
 ## 2. Structure
 
-Define the documentation structure before large-scale drafting. The assistant may propose options and identify gaps, but the maintainer owns the structure.
+Define the documentation structure before large-scale drafting. For tutorials, define the reader goal, prerequisites, starting state, expected result, and verification path before writing the full procedure. The assistant may propose options and identify gaps, but the maintainer owns the structure.
 
 A useful structure should make reader tasks visible, separate current truth from history, and keep reference material easy to find.
 

@@ -13,9 +13,13 @@ This guide defines general style principles for technical documentation derived 
 - Keep sections scannable with meaningful headings and lists.
 - Explain why something matters when the operational consequence is not obvious.
 
+## Bilingual writing
+
+When documentation is bilingual, preserve meaning, task order, terminology, warnings, and verification criteria across languages. Do not let German and English versions drift into different documentation states.
+
 ## Task-oriented writing
 
-For procedures, make clear:
+For procedures and tutorials, make clear:
 
 - Prerequisites.
 - Starting state.
