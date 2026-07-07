@@ -44,6 +44,9 @@ Some setup files in this template may remain in derived projects as documentatio
    - Stable source references.
 
 8. Adapt template files.
+   - Preserve an AI Collaboration Note directly below the README title and badges, if badges are present.
+   - Keep the note visible, factually correct for the derived project, and linked to `ChatGPT.md`.
+   - Include one concrete sentence describing what the collaboration model documents for the derived documentation project, such as documentation practices, collaboration workflows, link discipline, visual QA or repository conventions.
    - Update `PROJECT_CONTEXT.md`.
    - Complete `DOCS_SETUP.md`.
    - Adapt `AUDIENCE.md`, `STYLE_GUIDE.md`, `SCREENSHOTS.md`, `LINKS.md`, and `VISUAL_QA.md`.

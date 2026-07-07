@@ -4,7 +4,11 @@ All notable changes to this template will be documented in this file.
 
 ## [Unreleased]
 
-No unreleased changes yet.
+### Added
+
+- AI Collaboration Notes to the English and German READMEs.
+- Setup guidance requiring derived documentation projects to preserve a visible AI Collaboration Note linked to `ChatGPT.md`.
+- Concrete AI Collaboration Note wording describing documented documentation practices, AI-assisted workflows, QA discipline and repository conventions.
 
 ## [v0.2.0] - 2026-07-04
 

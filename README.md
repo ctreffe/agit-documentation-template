@@ -1,5 +1,16 @@
 # AGIT Documentation Template
 
+> [!NOTE]
+> **AI Collaboration**
+>
+> This repository maintains the AGIT Documentation Template.
+>
+> The AGIT Documentation Template is the documentation-oriented specialization of the AGIT template family.
+>
+> The collaboration model documents documentation practices, AI-assisted documentation workflows, link and visual QA discipline and repository conventions for documentation projects.
+>
+> Its collaboration model is maintained in [ChatGPT.md](ChatGPT.md).
+
 Template for AI-assisted technical documentation in AGIT contexts, with repository-first workflows, link discipline, screenshots, visual QA, and documented decisions.
 
 This repository provides a starting point for technical documentation projects that should be maintained with the same rigor as software and scientific writing projects: explicit context, clear ownership, reproducible collaboration, documented decisions, and reviewable milestones.
