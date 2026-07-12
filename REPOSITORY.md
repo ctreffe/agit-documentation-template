@@ -41,4 +41,4 @@ Use small, reviewable changes. Keep unrelated work out of the same commit.
 
 Regular commits should use Conventional Commits. Milestone commits should omit the prefix, be descriptive, and include the version number.
 
-The assistant must not commit, push, reset, drop stashes, or rewrite history without explicit maintainer instruction.
+The assistant must not commit, push, reset, drop stashes, rewrite history or perform other Git history actions unless the maintainer instruction for that specific action contains a recognized control word: `explicit` or `explicitly` in English, or the German word family `explizit`, including `explizite`, `expliziten`, `expliziter` and `explizites`.

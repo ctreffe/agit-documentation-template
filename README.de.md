@@ -50,6 +50,12 @@ Das Documentation Template passt, wenn Zielgruppe, Struktur, Screenshots, Links,
 6. Wichtige Entscheidungen in `decisions/` festhalten, normalerweise als DDRs.
 7. Sinnvolle Meilensteine mit Changelog, Version und Konsistenzprüfung abschließen.
 
+## Kontrollwörter für Git-History-Aktionen
+
+AI Assistants dürfen Git-History-Aktionen wie Staging, Commit, Tag, Push, Pull, Merge, Rebase, Reset oder Branch-Wechsel nur ausführen, wenn die Maintainer-Anweisung für genau diese Aktion ein anerkanntes Kontrollwort enthält.
+
+Anerkannte Kontrollwörter sind `explicit` und `explicitly` in englischsprachigen Anweisungen sowie die deutsche Wortfamilie `explizit`, einschließlich gebeugter Formen wie `explizite`, `expliziten`, `expliziter` und `explizites`, in deutschsprachigen Anweisungen. Anfragen ohne eines dieser Kontrollwörter erlauben nur Vorbereitung und Anleitung.
+
 ## Maintainer-Setup
 
 Für ein neues Codex-basiertes Dokumentationsprojekt empfiehlt sich diese Reihenfolge:

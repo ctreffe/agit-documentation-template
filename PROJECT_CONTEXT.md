@@ -116,4 +116,4 @@ Link check expectations:
 
 - The maintainer owns structure, technical correctness, and publication.
 - The assistant may provide feedback and consistency checks.
-- Git history actions require explicit maintainer instruction.
+- Git history actions require a maintainer instruction containing a recognized control word: `explicit` or `explicitly` in English, or `explizit` and inflected forms such as `explizite`, `expliziten`, `expliziter` and `explizites` in German.

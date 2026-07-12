@@ -6,6 +6,7 @@ All notable changes to this template will be documented in this file.
 
 ### Added
 
+- Git history control-word guidance for English and German maintainer instructions.
 - AI Collaboration Notes to the English and German READMEs.
 - AGIT Templateverse sections to the English and German READMEs.
 - Shared `decisions/` Decision Record location with DDR, PDR and ADR templates.

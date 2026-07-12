@@ -50,6 +50,12 @@ Start from the Documentation Template when audience, structure, screenshots, lin
 6. Record substantial decisions in `decisions/`, usually as DDRs.
 7. Close meaningful milestones with changelog, version, and consistency review.
 
+## Git History Control Words
+
+AI assistants must not perform Git history actions such as staging, committing, tagging, pushing, pulling, merging, rebasing, resetting or switching branches unless the maintainer instruction for that specific action contains a recognized control word.
+
+Recognized control words are `explicit` and `explicitly` in English-language instructions, and the German word family `explizit`, including inflected forms such as `explizite`, `expliziten`, `expliziter` and `explizites`, in German-language instructions. Requests without one of these control words authorize preparation and guidance only.
+
 ## Maintainer setup
 
 For a new Codex-based documentation project, use this setup sequence:

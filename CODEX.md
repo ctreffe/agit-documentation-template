@@ -15,7 +15,7 @@ This repository is a reusable template for AI-assisted technical documentation p
 - Keep technical documentation task-oriented, precise, and reviewable.
 - Treat links, screenshots, diagrams, and generated outputs as documentation artifacts that need provenance and QA.
 - Record substantial documentation decisions as DDRs.
-- Do not create commits, rewrite history, drop stashes, reset branches, or push unless explicitly instructed.
+- Do not create commits, rewrite history, drop stashes, reset branches, push or perform other Git history actions unless the maintainer instruction for that specific action contains a recognized control word: `explicit` or `explicitly` in English, or the German word family `explizit`, including `explizite`, `expliziten`, `expliziter` and `explizites`.
 
 ## Commit policy
 

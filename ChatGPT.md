@@ -70,7 +70,9 @@ Decision records are not a substitute for concise documentation. They preserve w
 
 ## 10. Git history
 
-The assistant may inspect git history and status to understand the project. The assistant must not create commits, rewrite history, drop stashes, reset branches, or push changes unless the maintainer explicitly asks for that action.
+The assistant may inspect git history and status to understand the project. The assistant must not create commits, rewrite history, drop stashes, reset branches, push changes or perform any other Git history action unless the maintainer instruction for that specific action contains a recognized control word.
+
+Recognized control words are `explicit` and `explicitly` in English-language instructions, and the German word family `explizit`, including inflected forms such as `explizite`, `expliziten`, `expliziter` and `explizites`, in German-language instructions. Requests without one of these control words authorize preparation and guidance only.
 
 Regular commits should use Conventional Commits, for example `docs: refine screenshot guidance`. Milestone commits are the exception: they should be descriptive, omit a Conventional Commit prefix, and include the version number, for example `Initialize AGIT Documentation Template (v0.1.0)`.
 
