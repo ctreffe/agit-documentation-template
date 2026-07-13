@@ -35,10 +35,23 @@ Separate these categories clearly:
 
 Raw inputs and generated outputs should not be committed by default unless the project explicitly needs them and they have been reviewed.
 
+Establish `.gitignore` rules and a source inventory before placing sensitive
+raw inputs in the repository working tree. Before preparing a commit, review
+new and untracked files for personal data, internal system details, secrets,
+confidential information, licensing restrictions and unredacted visuals.
+
 ## Git workflow
 
 Use small, reviewable changes. Keep unrelated work out of the same commit.
 
-Regular commits should use Conventional Commits. Milestone commits should omit the prefix, be descriptive, and include the version number.
+Every commit should include a concise summary and a meaningful description that
+matches the actual diff. Regular commits should use Conventional Commits and
+represent one logical documentation step.
+
+A milestone should normally be built through multiple regular commits when
+structure, drafting, review and correction can be separated meaningfully.
+Milestone commits should omit the prefix, be descriptive, include the completed
+version number and primarily close already reviewed work. They must not hide
+unreviewed content or bundle a whole separable milestone into one change.
 
 The assistant must not commit, push, reset, drop stashes, rewrite history or perform other Git history actions unless the maintainer instruction for that specific action contains a recognized control word: `explicit` or `explicitly` in English, or the German word family `explizit`, including `explizite`, `expliziten`, `expliziter` and `explizites`.

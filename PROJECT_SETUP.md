@@ -30,6 +30,9 @@ Some setup files in this template may remain in derived projects as documentatio
    - Raw screenshots, logs, exports, tickets, URLs, configuration files, or source documents.
    - Sensitive or personal information.
    - Sanitization or redaction requirements.
+   - Which raw sources, reviewed derivatives and generated outputs may be
+     versioned, and which `.gitignore` rules must exist before source files are
+     added to the working tree.
 
 6. Confirm visual documentation model.
    - Screenshot policy.
@@ -52,7 +55,22 @@ Some setup files in this template may remain in derived projects as documentatio
    - Adapt `AUDIENCE.md`, `STYLE_GUIDE.md`, `SCREENSHOTS.md`, `LINKS.md`, and `VISUAL_QA.md`.
    - Keep or archive setup files according to maintainer decision.
 
-9. Prepare initialization commit.
+9. Establish the initial roadmap and review rhythm.
+   - Define the first meaningful documentation milestone and its validation or
+     publication objective.
+   - Identify the next small structure, drafting, review and QA steps.
+   - Plan regular Conventional Commits below the milestone and a separate
+     milestone closure commit.
+
+10. Confirm initialization completion.
+   - Verify that identity, purpose, scope, audience, roadmap, source handling,
+     Quarto and publication model, QA expectations, decision-record needs and
+     retained template files are documented consistently.
+   - Resolve required `TBD` placeholders before substantive drafting begins.
+
+11. Prepare initialization commit.
    - Review git status.
    - Review generated changes.
-   - Use a milestone commit message if this is the first stable project baseline.
+   - Normally use a regular `chore:` commit for initialization.
+   - Use an unprefixed milestone commit only when initialization also completes
+     a genuinely defined and reviewed versioned milestone.

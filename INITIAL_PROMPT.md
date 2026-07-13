@@ -21,8 +21,24 @@ Ask me for all missing maintainer decisions, including:
 - Required outputs and publication context.
 - Quarto project type, output formats, CLI availability, PATH status, and render expectations.
 - Existing source material and sensitivity constraints.
+- Which raw sources, reviewed derivatives and generated outputs may be tracked
+  in Git, and which ignore rules must exist first.
 - Screenshot, diagram, visual QA, and link expectations.
+- The first roadmap milestone, its validation objective and the first small
+  reviewable steps below it.
 - Repository files that should remain template documentation, be adapted, be marked completed, or be removed.
 
-After collecting the required information, update the repository files to reflect the concrete project, including `_quarto.yml` and the files in `docs/` when Quarto is used. Prepare, but do not execute, an initialization commit unless I explicitly ask you to commit.
+After collecting the required information, update the repository files to
+reflect the concrete project, including `_quarto.yml` and the files in `docs/`
+when Quarto is used. Confirm that the structured initialization is complete and
+that required placeholders have been resolved before large-scale drafting.
+
+Do not stage, commit, tag, push, pull, merge, reset, rebase, switch branches or
+otherwise modify Git history unless I instruct you to perform that specific Git
+action and use a recognized control word: `explicit` or `explicitly` in
+English, or the German word family `explizit`.
+
+When the setup state is ready, provide a change summary, checks, limitations, a
+suggested commit summary and description, and a concise numbered list of
+remaining maintainer decisions or GitHub Desktop steps.
 ```

@@ -63,6 +63,21 @@ Sanitization or redaction rules:
 
 - TBD
 
+Git versioning and ignore rules for sources:
+
+- TBD
+
+Reviewed derivatives:
+
+- TBD
+
+## Initial roadmap
+
+- Next small step: TBD
+- First documentation milestone: TBD
+- Review and validation objective: TBD
+- Intentional non-goals: TBD
+
 ## Quarto model
 
 - Quarto project type: TBD
@@ -116,4 +131,6 @@ Link check expectations:
 
 - The maintainer owns structure, technical correctness, and publication.
 - The assistant may provide feedback and consistency checks.
+- Maintainer decisions and clarification questions should be presented as
+  concise numbered lists when practical.
 - Git history actions require a maintainer instruction containing a recognized control word: `explicit` or `explicitly` in English, or `explizit` and inflected forms such as `explizite`, `expliziten`, `expliziter` and `explizites` in German.

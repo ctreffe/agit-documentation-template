@@ -19,4 +19,11 @@ This repository is a reusable template for AI-assisted technical documentation p
 
 ## Commit policy
 
-Regular commits should use Conventional Commits. Milestone commits should omit the prefix, be descriptive, and include the version number.
+Every recommendation should contain both a concise commit summary and a
+meaningful description. Regular commits should use Conventional Commits and
+represent one logical reviewed step. Milestone commits should omit the prefix,
+be descriptive, include the completed version number and close work already
+recorded in regular commits.
+
+Use concise numbered lists for maintainer decisions, clarification questions,
+validation actions, review points and GitHub Desktop steps whenever practical.

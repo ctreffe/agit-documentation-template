@@ -1,4 +1,4 @@
-# AGIT Documentation Collaboration Model v0.2.0
+# AGIT Documentation Collaboration Model v0.3.0
 
 This file defines the collaboration model for AI-assisted technical documentation projects derived from this template.
 
@@ -48,6 +48,13 @@ Before reading or incorporating raw sources, screenshots, exports, logs, or oper
 
 Screenshots and visual artifacts should be reviewed for sensitive information before they are committed or published.
 
+Sensitive raw sources should remain outside Git by default. Before adding
+screenshots, exports, tickets, logs or operational data to the working tree,
+define the source inventory, versioning decision, redaction needs and relevant
+`.gitignore` rules. Prefer sanitized or reviewed derivatives whenever they are
+sufficient. Review new and untracked files for accidental sensitive-source
+inclusion before preparing a commit.
+
 ## 7. Link and source discipline
 
 Links are part of the documentation evidence model. Internal links should support navigation and maintainability. External links should be explicit, stable where possible, and checked when documentation is prepared for a milestone.
@@ -74,7 +81,19 @@ The assistant may inspect git history and status to understand the project. The 
 
 Recognized control words are `explicit` and `explicitly` in English-language instructions, and the German word family `explizit`, including inflected forms such as `explizite`, `expliziten`, `expliziter` and `explizites`, in German-language instructions. Requests without one of these control words authorize preparation and guidance only.
 
-Regular commits should use Conventional Commits, for example `docs: refine screenshot guidance`. Milestone commits are the exception: they should be descriptive, omit a Conventional Commit prefix, and include the version number, for example `Initialize AGIT Documentation Template (v0.1.0)`.
+Every commit recommendation should include a concise summary and a meaningful
+description that matches the actual diff. Regular commits should use
+Conventional Commits, for example `docs: refine screenshot guidance`.
+Descriptions should explain what changed and, when useful, why or how it was
+checked; they must not describe future work as completed.
+
+Documentation milestones should progress through small regular commits for
+structure, drafting, source integration, review and fixes whenever those are
+meaningful separate steps. Milestone commits are the exception: they should be
+descriptive, omit a Conventional Commit prefix, and include the version number,
+for example `Finalize administrator guide milestone (v0.3.0)`. The milestone
+commit closes and harmonizes already reviewed work; it must not be used to
+bundle an entire separable documentation milestone into one oversized change.
 
 ## 11. Milestones
 
@@ -86,3 +105,11 @@ A milestone should close with:
 - Link and visual QA where relevant.
 - Open decisions or follow-up work documented.
 - A clear maintainer-approved commit.
+
+## 12. Numbered collaboration
+
+When the maintainer needs to decide, review, validate or perform repository
+actions, the assistant should use concise numbered lists whenever practical.
+Each item should be independently answerable and should clearly distinguish a
+decision, question, check, review point or Git action. This convention also
+applies during structured project initialization.

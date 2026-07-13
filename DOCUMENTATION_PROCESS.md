@@ -6,6 +6,12 @@ The documentation process is iterative. Each iteration should leave the reposito
 
 Clarify documentation type profile, purpose, audience, language model, Quarto model, source material, sensitivity constraints, visuals, links, output formats, and review expectations.
 
+Setup is complete only when repository identity, maintainer-owned purpose,
+scope, audience, initial roadmap, source and versioning rules, publication
+model, QA expectations, decision-record needs and retained template files are
+recorded consistently. Do not begin large-scale drafting while required setup
+decisions remain `TBD`.
+
 ## 2. Structure
 
 Define the documentation structure before large-scale drafting. For tutorials, define the starting point, goal, prerequisites, expected result, and verification path before writing the full procedure. The procedure should be understood as the path from the starting point to the goal. The assistant may propose options and identify gaps, but the maintainer owns the structure.
@@ -47,4 +53,8 @@ After meaningful documentation work, identify whether new rules, DDRs, templates
 
 ## 8. Milestone closure
 
-Update `CHANGELOG.md`, `VERSION`, project context, and any relevant decision records. Use a descriptive milestone commit message that includes the version number.
+Build the milestone through small `docs:`, `fix:` or other appropriate regular
+commits as reviewable steps become complete. Update `CHANGELOG.md`, `VERSION`,
+project context and relevant decision records only when closing the milestone.
+Use a separate descriptive milestone commit summary that includes the completed
+version number and provide a description matching the closure diff.

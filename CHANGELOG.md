@@ -6,12 +6,21 @@ All notable changes to this template will be documented in this file.
 
 ### Added
 
+- Documentation Collaboration Model v0.3.0 with formal working-commit rhythm,
+  structured initialization completion and numbered maintainer collaboration.
 - Git history control-word guidance for English and German maintainer instructions.
 - AI Collaboration Notes to the English and German READMEs.
 - AGIT Templateverse sections to the English and German READMEs.
 - Shared `decisions/` Decision Record location with DDR, PDR and ADR templates.
 - Setup guidance requiring derived documentation projects to preserve a visible AI Collaboration Note linked to `ChatGPT.md`.
 - Concrete AI Collaboration Note wording describing documented documentation practices, AI-assisted workflows, QA discipline and repository conventions.
+
+### Changed
+
+- Require consistent commit summaries and meaningful descriptions while
+  reserving milestone commits for separate reviewed closure.
+- Strengthen safeguards against adding sensitive raw documentation sources to
+  Git.
 
 ## [v0.2.0] - 2026-07-04
 
