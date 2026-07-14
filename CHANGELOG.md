@@ -17,6 +17,13 @@ All notable changes to this template will be documented in this file.
 
 ### Changed
 
+- Separate assistant access, Git versioning and publication approval for raw
+  sources, reviewed derivatives and generated documentation.
+- Extend disclosure review to rendered and embedded output surfaces and define
+  automated checks as warnings rather than safety approval.
+- Add a standard checkpoint handoff and maintainer approval gate for external
+  review feedback.
+- Require human-readable executable Quarto chunks when a project uses them.
 - Require consistent commit summaries and meaningful descriptions while
   reserving milestone commits for separate reviewed closure.
 - Strengthen safeguards against adding sensitive raw documentation sources to

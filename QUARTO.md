@@ -54,6 +54,15 @@ project:
 
 This prevents repository governance files such as `README.md`, `ChatGPT.md`, or `PROJECT_CONTEXT.md` from being rendered as website pages by default.
 
+## Executable source readability
+
+When a documentation project uses executable Quarto chunks, write the QMD for
+a human source reader. Give every substantive chunk a unique descriptive label,
+keep one coherent reviewable purpose per chunk and place explanatory prose
+immediately above it. The prose should state why the chunk exists, what it uses
+and what result the reader should expect. Split overloaded chunks, but do not
+fragment a short coherent operation into trivial pieces.
+
 ## Default outputs
 
 HTML is the default practical output for most technical documentation projects and is the default format in this template.
@@ -106,6 +115,8 @@ Quarto output should be checked for:
 - Correct external links, where feasible.
 - Correct rendering of callouts, tables, code blocks, figures, and screenshots.
 - No sensitive information in rendered output.
+- No unintended disclosure through hover text, embedded resources or file
+  metadata.
 - Consistency between English and German outputs when both are maintained.
 
 ## Project exceptions

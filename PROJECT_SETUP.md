@@ -30,9 +30,13 @@ Some setup files in this template may remain in derived projects as documentatio
    - Raw screenshots, logs, exports, tickets, URLs, configuration files, or source documents.
    - Sensitive or personal information.
    - Sanitization or redaction requirements.
-   - Which raw sources, reviewed derivatives and generated outputs may be
-     versioned, and which `.gitignore` rules must exist before source files are
-     added to the working tree.
+   - Which raw sources or reviewed derivatives the assistant may inspect.
+   - Which reviewed derivatives and generated outputs may be versioned.
+   - Which artifacts may be published or otherwise shared.
+   - Which `.gitignore` rules must exist before source files are added to the
+     working tree.
+   - Which automated checks may warn about disclosure risks without being
+     treated as safety approval.
 
 6. Confirm visual documentation model.
    - Screenshot policy.

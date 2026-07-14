@@ -33,12 +33,18 @@ Separate these categories clearly:
 - Maintained documentation: Quarto source files and supporting Markdown that represent the project documentation.
 - Generated outputs: rendered HTML, PDFs, screenshots, previews, or release artifacts.
 
-Raw inputs and generated outputs should not be committed by default unless the project explicitly needs them and they have been reviewed.
+Raw inputs and generated outputs should not be committed by default unless the project explicitly needs them and they have been reviewed. Assistant access, Git versioning and publication or other sharing are separate approval decisions; none implies another.
 
 Establish `.gitignore` rules and a source inventory before placing sensitive
 raw inputs in the repository working tree. Before preparing a commit, review
 new and untracked files for personal data, internal system details, secrets,
 confidential information, licensing restrictions and unredacted visuals.
+
+Rendered pages, screenshots, tables, interactive elements, embedded resources,
+archives and file metadata may disclose sensitive information even when raw
+sources are absent. Review them before versioning or publication. Automated
+checks may identify risks, but a clean result does not authorize access,
+versioning or publication.
 
 ## Git workflow
 

@@ -48,12 +48,22 @@ Before reading or incorporating raw sources, screenshots, exports, logs, or oper
 
 Screenshots and visual artifacts should be reviewed for sensitive information before they are committed or published.
 
+Assistant access to a source or sanitized derivative, Git versioning and
+publication or other sharing are separate maintainer decisions. Approval for
+one does not imply either of the others.
+
 Sensitive raw sources should remain outside Git by default. Before adding
 screenshots, exports, tickets, logs or operational data to the working tree,
 define the source inventory, versioning decision, redaction needs and relevant
 `.gitignore` rules. Prefer sanitized or reviewed derivatives whenever they are
 sufficient. Review new and untracked files for accidental sensitive-source
 inclusion before preparing a commit.
+
+Generated documentation can disclose sensitive information through small
+tables, screenshots, URLs, labels, hover text, embedded resources, archives or
+file metadata even when raw sources are absent. Review these output surfaces
+before versioning or publication. Automated privacy, secret or content checks
+are warning systems, not proof that an artifact is safe.
 
 ## 7. Link and source discipline
 
@@ -113,3 +123,17 @@ actions, the assistant should use concise numbered lists whenever practical.
 Each item should be independently answerable and should clearly distinguish a
 decision, question, check, review point or Git action. This convention also
 applies during structured project initialization.
+
+At a meaningful checkpoint, the numbered handoff should identify the content
+ready for review, QA performed, source or disclosure limitations, decisions
+required from the maintainer, the proposed next step and, when ready, a commit
+summary and description.
+
+## 13. External feedback
+
+Feedback from external reviewers is review input, not an automatic instruction
+to change the maintained documentation. The assistant should summarize external
+comments as numbered issues and wait for maintainer acceptance, rejection or
+qualification before implementing them. Clear comments written by the
+maintainer may be transferred directly; ambiguous or consequential comments
+require clarification.

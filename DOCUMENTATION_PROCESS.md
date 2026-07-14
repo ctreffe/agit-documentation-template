@@ -34,6 +34,11 @@ Use active voice where appropriate. State prerequisites, steps, outcomes, limita
 
 Use screenshots and diagrams when they clarify real interfaces, states, workflows, or decisions. Review visuals for currency, readability, relevance, and sensitive information.
 
+External reviewer comments are review input rather than automatic change
+instructions. Present them to the maintainer as concise numbered issues before
+incorporation unless the maintainer has already provided an unambiguous
+decision.
+
 ## 6. Quality assurance
 
 Before milestone closure, check:
@@ -58,3 +63,7 @@ commits as reviewable steps become complete. Update `CHANGELOG.md`, `VERSION`,
 project context and relevant decision records only when closing the milestone.
 Use a separate descriptive milestone commit summary that includes the completed
 version number and provide a description matching the closure diff.
+
+At each meaningful checkpoint, hand off the content ready for review, QA
+performed, source or disclosure limitations, maintainer decisions, proposed
+next step and commit metadata when the step is ready.

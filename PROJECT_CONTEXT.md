@@ -63,7 +63,15 @@ Sanitization or redaction rules:
 
 - TBD
 
-Git versioning and ignore rules for sources:
+Assistant-access approval:
+
+- TBD
+
+Git-versioning and ignore rules:
+
+- TBD
+
+Publication or external-sharing approval:
 
 - TBD
 
