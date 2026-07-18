@@ -4,6 +4,12 @@ All notable changes to this template will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Upgrade the Documentation Collaboration Model to v0.4.0 and classify staging
+  and unstaging as specifically requested index operations outside the
+  control-word rule.
+
 ## [v0.3.0] - 2026-07-19
 
 ### Added

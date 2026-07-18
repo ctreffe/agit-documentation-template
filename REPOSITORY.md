@@ -64,4 +64,13 @@ Milestone commits should omit the prefix, be descriptive, include the completed
 version number and primarily close already reviewed work. They must not hide
 unreviewed content or bundle a whole separable milestone into one change.
 
-The assistant must not commit, push, reset, drop stashes, rewrite history or perform other Git history actions unless the maintainer instruction for that specific action contains a recognized control word: `explicit` or `explicitly` in English, or the German word family `explizit`, including `explizite`, `expliziten`, `expliziter` and `explizites`.
+Staging and unstaging are index operations and do not require a control word.
+They require a specific maintainer request or authorization of the corresponding
+commit, and existing staged selections and unrelated changes must be preserved.
+
+The assistant must not commit, amend, tag, push, pull, merge, rebase, reset,
+switch branches, manipulate stashes, rewrite history or perform another
+protected Git action unless the maintainer instruction for that specific action
+contains a recognized control word: `explicit` or `explicitly` in English, or
+the German word family `explizit`, including `explizite`, `expliziten`,
+`expliziter` and `explizites`.

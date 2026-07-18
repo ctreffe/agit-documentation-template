@@ -1,4 +1,4 @@
-# AGIT Documentation Collaboration Model v0.3.0
+# AGIT Documentation Collaboration Model v0.4.0
 
 This file defines the collaboration model for AI-assisted technical documentation projects derived from this template.
 
@@ -89,9 +89,18 @@ Documentation projects may also use PDRs for project scope, roadmap, collaborati
 
 Decision records are not a substitute for concise documentation. They preserve why important choices were made.
 
-## 10. Git history
+## 10. Git index and protected Git actions
 
-The assistant may inspect git history and status to understand the project. The assistant must not create commits, rewrite history, drop stashes, reset branches, push changes or perform any other Git history action unless the maintainer instruction for that specific action contains a recognized control word.
+The assistant may inspect Git history and status to understand the project.
+Staging and unstaging are index operations, not history actions, and do not
+require a control word. They may be performed only when the maintainer
+specifically requests the index action or authorizes the corresponding commit;
+existing staged selections and unrelated changes must be preserved.
+
+The assistant must not create or amend commits, create or delete tags, push,
+pull, merge, rebase, reset, switch branches, manipulate stashes, rewrite
+history or perform another protected Git action unless the maintainer
+instruction for that specific action contains a recognized control word.
 
 Recognized control words are `explicit` and `explicitly` in English-language instructions, and the German word family `explizit`, including inflected forms such as `explizite`, `expliziten`, `expliziter` and `explizites`, in German-language instructions. Requests without one of these control words authorize preparation and guidance only.
 

@@ -58,7 +58,11 @@ substantive edits, provide a concise numbered re-entry report containing:
 If my continuation instruction also contains a concrete safe task, proceed
 after reconstruction; otherwise wait for confirmation of the next step.
 
-Do not perform Git history actions unless I instruct you to perform the
+Staging and unstaging do not require a control word, but perform them only when
+I specifically request the index action or authorize the corresponding commit.
+Preserve existing staged selections and unrelated changes.
+
+Do not perform a protected Git action unless I instruct you to perform the
 specific action with a recognized control word: `explicit`, `explicitly` or the
 German word family `explizit`.
 ```

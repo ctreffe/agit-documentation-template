@@ -41,8 +41,13 @@ reflect the concrete project, including `_quarto.yml` and the files in `docs/`
 when Quarto is used. Confirm that the structured initialization is complete and
 that required placeholders have been resolved before large-scale drafting.
 
-Do not stage, commit, tag, push, pull, merge, reset, rebase, switch branches or
-otherwise modify Git history unless I instruct you to perform that specific Git
+Staging and unstaging do not require a control word, but perform them only when
+I specifically request the index action or authorize the corresponding commit.
+Preserve existing staged selections and unrelated changes.
+
+Do not commit, amend, tag, push, pull, merge, reset, rebase, switch branches,
+manipulate stashes or perform another protected Git action unless I instruct
+you to perform that specific Git
 action and use a recognized control word: `explicit` or `explicitly` in
 English, or the German word family `explizit`.
 

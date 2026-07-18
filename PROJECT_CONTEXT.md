@@ -194,7 +194,10 @@ Link check expectations:
 - The assistant may provide feedback and consistency checks.
 - Maintainer decisions and clarification questions should be presented as
   concise numbered lists when practical.
-- Git history actions require a maintainer instruction containing a recognized control word: `explicit` or `explicitly` in English, or `explizit` and inflected forms such as `explizite`, `expliziten`, `expliziter` and `explizites` in German.
+- Staging and unstaging require a specific maintainer request or authorization
+  of the corresponding commit, but no control word. Protected Git actions
+  require a specific instruction containing `explicit`, `explicitly` or the
+  German word family `explizit`.
 
 ## Next session
 

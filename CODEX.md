@@ -27,7 +27,16 @@ This repository is a reusable template for AI-assisted technical documentation p
 - Review rendered content, interactive elements, embedded resources and file
   metadata for disclosure risks before versioning or publication.
 - Record substantial documentation decisions as DDRs.
-- Do not create commits, rewrite history, drop stashes, reset branches, push or perform other Git history actions unless the maintainer instruction for that specific action contains a recognized control word: `explicit` or `explicitly` in English, or the German word family `explizit`, including `explizite`, `expliziten`, `expliziter` and `explizites`.
+- Treat staging and unstaging as index operations that do not require a control
+  word. Perform them only when specifically requested or when the corresponding
+  commit is authorized, and preserve existing staged selections and unrelated
+  changes.
+- Do not create or amend commits, create or delete tags, push, pull, merge,
+  rebase, reset, switch branches, manipulate stashes, rewrite history or
+  perform another protected Git action unless the maintainer instruction for
+  that specific action contains a recognized control word: `explicit` or
+  `explicitly` in English, or the German word family `explizit`, including
+  `explizite`, `expliziten`, `expliziter` and `explizites`.
 
 ## Commit policy
 

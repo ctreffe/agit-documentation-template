@@ -54,11 +54,18 @@ Start from the Documentation Template when audience, structure, screenshots, lin
 9. Use [RETROSPECTIVE_PROMPT.md](RETROSPECTIVE_PROMPT.md) when the maintainer requests a collaboration review.
 10. Begin later context windows or assistant sessions with [CONTINUATION_PROMPT.md](CONTINUATION_PROMPT.md).
 
-## Git History Control Words
+## Git Index and Protected Git Actions
 
-AI assistants must not perform Git history actions such as staging, committing, tagging, pushing, pulling, merging, rebasing, resetting or switching branches unless the maintainer instruction for that specific action contains a recognized control word.
+Staging and unstaging are index operations and do not require a control word.
+They still require a specific maintainer request or authorization of the
+corresponding commit, and existing staged selections must be preserved.
 
-Recognized control words are `explicit` and `explicitly` in English-language instructions, and the German word family `explizit`, including inflected forms such as `explizite`, `expliziten`, `expliziter` and `explizites`, in German-language instructions. Requests without one of these control words authorize preparation and guidance only.
+AI assistants must not commit, amend, tag, push, pull, merge, rebase, reset,
+switch branches, manipulate stashes or perform another protected Git action
+unless the maintainer instruction for that specific action contains a
+recognized control word.
+
+Recognized control words are `explicit` and `explicitly` in English-language instructions, and the German word family `explizit`, including inflected forms such as `explizite`, `expliziten`, `expliziter` and `explizites`, in German-language instructions. Requests for protected Git actions without one of these control words authorize preparation and guidance only.
 
 ## Maintainer setup
 
