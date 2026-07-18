@@ -10,6 +10,7 @@ This file is a template. In a derived documentation project, replace the placeho
 - Initialization status: `<not started | in progress | completed>`
 - Initialization date: `<YYYY-MM-DD | not yet completed>`
 - Last template harmonization: `<not yet performed | template version, commit hash and date>`
+- Last collaboration retrospective: `<not yet performed | reviewed period or milestone, date and relevant record>`
 - Intentional template deviations and relevant Decision Records: `<none | concise list>`
 
 Keep `PROJECT_SETUP.md` and `INITIAL_PROMPT.md` as initialization provenance.
@@ -166,6 +167,7 @@ Link check expectations:
 - `INITIAL_PROMPT.md` - retained first-session initialization prompt
 - `CONTINUATION_PROMPT.md` - re-entry prompt for a new context window or assistant session
 - `HARMONIZATION_PROMPT.md` - source-template, documentation-consistency and roadmap harmonization
+- `RETROSPECTIVE_PROMPT.md` - structured Maintainer-Agent documentation-collaboration review
 - `DOCS_SETUP.md` - documentation setup and current model
 - `DOCUMENTATION_PROCESS.md` - ongoing documentation workflow
 - `AUDIENCE.md` - audience assumptions

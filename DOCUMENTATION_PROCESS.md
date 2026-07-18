@@ -54,13 +54,13 @@ Before milestone closure, check:
 
 ## 7. Harmonization
 
-Before milestone closure, use `HARMONIZATION_PROMPT.md` to compare the project
-with its recorded source template, reconcile internal documentation and output
-state, and review roadmap and coverage fit.
+The maintainer decides when to use `HARMONIZATION_PROMPT.md` to compare the
+project with its recorded source template, reconcile internal documentation and
+output state, and review roadmap and coverage fit.
 
 ## 8. Collaboration retrospective
 
-After a suitable milestone, and less frequently than harmonization, evaluate
+The maintainer decides when to use `RETROSPECTIVE_PROMPT.md` to evaluate
 Maintainer-Agent collaboration, including rules, feedback, decisions, handoffs
 and work rhythm. Project-content implications are handed to a later
 harmonization; reusable collaboration lessons may become template candidates.

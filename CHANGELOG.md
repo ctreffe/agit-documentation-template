@@ -6,6 +6,8 @@ All notable changes to this template will be documented in this file.
 
 ### Added
 
+- `RETROSPECTIVE_PROMPT.md` for evidence-based documentation-collaboration
+  review and controlled template-learning candidates.
 - `HARMONIZATION_PROMPT.md` for source-template comparison, documentation
   consistency review and roadmap alignment.
 - `CONTINUATION_PROMPT.md` for reproducible documentation-project re-entry in a

@@ -151,5 +151,13 @@ coverage fit. The concrete project, audience decisions and Decision Records
 remain authoritative.
 
 Harmonization does not evaluate Maintainer-Agent collaboration or derive
-changes for the source template. Those questions belong to a less frequent
-collaboration retrospective, normally after a suitable milestone.
+changes for the source template. Those questions belong to a collaboration
+retrospective. The maintainer decides when to invoke either prompt and which
+scope it should cover.
+
+Use `RETROSPECTIVE_PROMPT.md` for that structured collaboration review.
+Retrospective template findings remain candidates. The assistant must not
+modify the source-template repository unless the maintainer authorizes the
+specific template change with `explicit`, `explicitly` or the German word
+family `explizit`. Template-edit permission does not authorize Git history;
+each Git action still requires its own specific control-word instruction.

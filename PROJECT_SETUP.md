@@ -88,5 +88,8 @@ only as a deliberate, documented maintainer exception.
 After initialization, retain `CONTINUATION_PROMPT.md` and use it whenever work
 continues in a new context window or assistant session.
 
-Retain `HARMONIZATION_PROMPT.md` for periodic source-template, documentation,
-output and roadmap alignment.
+Retain `HARMONIZATION_PROMPT.md` for maintainer-initiated source-template,
+documentation, output and roadmap alignment.
+
+Retain `RETROSPECTIVE_PROMPT.md` for maintainer-initiated, structured reviews
+of Maintainer-Agent documentation collaboration.

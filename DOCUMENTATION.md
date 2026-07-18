@@ -19,6 +19,8 @@ Template files describe how a documentation project should be initialized, maint
   window or assistant session.
 - `HARMONIZATION_PROMPT.md`: Reproducible source-template, documentation-state
   and roadmap harmonization prompt.
+- `RETROSPECTIVE_PROMPT.md`: Reproducible Maintainer-Agent
+  documentation-collaboration review prompt.
 - `DOCS_SETUP.md`: Documentation-specific setup checklist.
 - `PROJECT_CONTEXT.md`: Project memory template.
 - `DOCUMENTATION_PROCESS.md`: Ongoing documentation workflow.
