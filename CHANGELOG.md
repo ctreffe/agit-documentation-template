@@ -19,6 +19,8 @@ All notable changes to this template will be documented in this file.
 
 ### Changed
 
+- Retain initialization artifacts as project provenance and record template
+  lineage, lifecycle status and harmonization baselines in `PROJECT_CONTEXT.md`.
 - Expand `PROJECT_CONTEXT.md` with current-work, relevant-document and
   next-session fields needed for reliable continuation.
 - Separate assistant access, Git versioning and publication approval for raw

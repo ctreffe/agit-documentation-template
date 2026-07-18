@@ -26,7 +26,12 @@ Ask me for all missing maintainer decisions, including:
 - Screenshot, diagram, visual QA, and link expectations.
 - The first roadmap milestone, its validation objective and the first small
   reviewable steps below it.
-- Repository files that should remain template documentation, be adapted, be marked completed, or be removed.
+- Initialization provenance: keep PROJECT_SETUP.md and INITIAL_PROMPT.md under
+  their original names, and record initialization status and date, the source
+  template version and commit, the latest template harmonization baseline and
+  intentional deviations in PROJECT_CONTEXT.md. Remove an initialization file
+  only if I make a deliberate exception and the reason is documented.
+- Ongoing project rules and domain files that should be adapted and maintained.
 
 After collecting the required information, update the repository files to
 reflect the concrete project, including `_quarto.yml` and the files in `docs/`

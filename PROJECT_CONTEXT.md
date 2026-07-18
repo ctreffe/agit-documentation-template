@@ -2,6 +2,20 @@
 
 This file is a template. In a derived documentation project, replace the placeholders with project-specific context.
 
+## Template lineage and initialization
+
+- Repository role: derived project
+- Source template: AGIT Documentation Template
+- Initial template baseline: `<template version and commit hash>`
+- Initialization status: `<not started | in progress | completed>`
+- Initialization date: `<YYYY-MM-DD | not yet completed>`
+- Last template harmonization: `<not yet performed | template version, commit hash and date>`
+- Intentional template deviations and relevant Decision Records: `<none | concise list>`
+
+Keep `PROJECT_SETUP.md` and `INITIAL_PROMPT.md` as initialization provenance.
+They describe the project's methodological roots; this section records their
+lifecycle status and the baselines used over time.
+
 ## Project identity
 
 - Project name: TBD
@@ -148,6 +162,8 @@ Link check expectations:
 
 ## Relevant documents
 
+- `PROJECT_SETUP.md` - retained initialization method and provenance
+- `INITIAL_PROMPT.md` - retained first-session initialization prompt
 - `CONTINUATION_PROMPT.md` - re-entry prompt for a new context window or assistant session
 - `DOCS_SETUP.md` - documentation setup and current model
 - `DOCUMENTATION_PROCESS.md` - ongoing documentation workflow

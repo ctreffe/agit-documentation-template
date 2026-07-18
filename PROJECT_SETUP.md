@@ -2,7 +2,10 @@
 
 Use this file when creating a concrete documentation project from the template.
 
-Some setup files in this template may remain in derived projects as documentation of the initialization process. They may also be marked as completed or archived if the maintainer prefers. Do not delete initialization files automatically unless the maintainer explicitly chooses that approach.
+Keep `PROJECT_SETUP.md` and `INITIAL_PROMPT.md` in derived projects as
+documentation of the initialization method. Record completion, source-template
+baseline and later harmonizations in `PROJECT_CONTEXT.md`; remove either file
+only as a deliberate, documented maintainer exception.
 
 ## Initialization checklist
 
@@ -57,7 +60,10 @@ Some setup files in this template may remain in derived projects as documentatio
    - Update `PROJECT_CONTEXT.md`.
    - Complete `DOCS_SETUP.md`.
    - Adapt `AUDIENCE.md`, `STYLE_GUIDE.md`, `SCREENSHOTS.md`, `LINKS.md`, and `VISUAL_QA.md`.
-   - Keep or archive setup files according to maintainer decision.
+   - Keep `PROJECT_SETUP.md` and `INITIAL_PROMPT.md` as initialization provenance.
+   - Record the initial template version and commit, initialization status,
+     later harmonization baseline and intentional deviations in
+     `PROJECT_CONTEXT.md`.
 
 9. Establish the initial roadmap and review rhythm.
    - Define the first meaningful documentation milestone and its validation or

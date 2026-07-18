@@ -44,7 +44,7 @@ Das Documentation Template passt, wenn Zielgruppe, Struktur, Screenshots, Links,
 
 1. Mit [INITIAL_PROMPT.md](INITIAL_PROMPT.md) starten.
 2. [PROJECT_SETUP.md](PROJECT_SETUP.md) und [DOCS_SETUP.md](DOCS_SETUP.md) ausfüllen.
-3. Projektspezifischen Kontext in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) festhalten.
+3. Projektspezifischen Kontext, Ausgangsstand des Templates und Initialisierungsstatus in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) festhalten.
 4. Dokumentationstyp, Zielgruppe, Zweisprachigkeit, Quarto-Struktur, Links, Screenshots und Visual-QA festlegen.
 5. Dokumentation in kleinen, prüfbaren Schritten erarbeiten.
 6. Wichtige Entscheidungen in `decisions/` festhalten, normalerweise als DDRs.
@@ -90,6 +90,11 @@ R und RStudio sind sinnvoll, wenn die Dokumentation R-Code, Datenanalysen, Plots
 - [LINKS.md](LINKS.md): Link- und Referenzdisziplin.
 - [VISUAL_QA.md](VISUAL_QA.md): Checkliste für visuelle Qualitätsprüfung.
 - [decisions/](decisions/): Decision Records, einschließlich DDRs, PDRs und ADRs.
+
+`PROJECT_SETUP.md` und `INITIAL_PROMPT.md` bleiben in abgeleiteten Repositories
+als Initialisierungsnachweis erhalten. Lebenszyklusstatus, ursprüngliche
+Template-Version und ursprünglicher Commit, spätere Harmonisierungsstände sowie
+bewusste Abweichungen werden in `PROJECT_CONTEXT.md` dokumentiert.
 
 ## Lizenz
 

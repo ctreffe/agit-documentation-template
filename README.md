@@ -44,7 +44,7 @@ Start from the Documentation Template when audience, structure, screenshots, lin
 
 1. Start from [INITIAL_PROMPT.md](INITIAL_PROMPT.md).
 2. Complete [PROJECT_SETUP.md](PROJECT_SETUP.md) and [DOCS_SETUP.md](DOCS_SETUP.md).
-3. Define project-specific context in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
+3. Define project-specific context and record the source-template baseline and initialization status in [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md).
 4. Establish documentation type, audience, bilingual needs, Quarto structure, link, screenshot, and visual QA rules.
 5. Draft documentation in small, reviewable increments.
 6. Record substantial decisions in `decisions/`, usually as DDRs.
@@ -90,6 +90,11 @@ R and RStudio are useful when the documentation includes R code, data analysis, 
 - [LINKS.md](LINKS.md): Link and reference discipline.
 - [VISUAL_QA.md](VISUAL_QA.md): Visual QA checklist.
 - [decisions/](decisions/): Decision Records, including DDRs, PDRs and ADRs.
+
+Keep `PROJECT_SETUP.md` and `INITIAL_PROMPT.md` in derived repositories as
+initialization provenance. Their lifecycle status, initial template version and
+commit, later harmonization baselines and intentional deviations belong in
+`PROJECT_CONTEXT.md`.
 
 ## License
 
