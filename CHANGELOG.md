@@ -4,6 +4,8 @@ All notable changes to this template will be documented in this file.
 
 ## [Unreleased]
 
+## [v0.4.0] - 2026-07-20
+
 ### Changed
 
 - Clarify `INITIAL_PROMPT.md` as the sole maintainer entry point for agent-led
