@@ -4,6 +4,16 @@ All notable changes to this template will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Add `AGENTS.md` as the concise, automatically loaded entry point that routes
+  AI agents to documentation, source-safety and validation guidance.
+
+### Changed
+
+- Align the initialization and continuation prompts with `AGENTS.md`: setup is
+  an explicit one-time workflow, while continuation only reconstructs state.
+
 ## [v0.4.0] - 2026-07-20
 
 ### Changed

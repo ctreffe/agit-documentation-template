@@ -141,6 +141,7 @@ Templates live in [decisions/](decisions/). Create a record only when the ration
 
 ### Collaboration, Setup and Process
 
+- **`AGENTS.md`** is the concise, automatically loaded entry point for AI agents. It routes them to the complete documentation, source-safety and validation guidance without duplicating it.
 - **`ChatGPT.md`** defines maintainer authority, repository-first documentation work, milestones, feedback and publication boundaries.
 - **`CODEX.md`** defines local assistant access, sensitive-source handling, rendering, Git and delivery rules.
 - **`PROJECT_SETUP.md`, `INITIAL_PROMPT.md` and `DOCS_SETUP.md`** establish repository identity, documentation type, audience, languages, source model, Quarto system and QA expectations. The first two normally remain as initialization provenance.
@@ -169,6 +170,7 @@ Templates live in [decisions/](decisions/). Create a record only when the ration
 In a derived documentation project:
 
 - replace placeholder identity, audience and documentation pages with concrete project content;
+- retain and adapt `AGENTS.md` as the automatic agent entry point;
 - complete `DOCS_SETUP.md`, `AUDIENCE.md` and `PROJECT_CONTEXT.md`;
 - adapt `_quarto.yml`, `docs/`, style, link, screenshot and visual-QA guidance;
 - retain `PROJECT_SETUP.md` and `INITIAL_PROMPT.md` as initialization provenance;

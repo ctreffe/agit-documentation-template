@@ -2,10 +2,15 @@
 
 Use this as the first prompt after creating a concrete documentation project from this template.
 
-For normal initialization, the maintainer only needs to give the prompt below to the assistant. The assistant reads and applies `PROJECT_SETUP.md`, `DOCS_SETUP.md` and the other setup files, presents every required maintainer decision and performs the repository updates; the maintainer does not execute those files separately.
+For normal initialization, the maintainer only needs to give the prompt below to the assistant. The assistant applies `AGENTS.md`—automatically loaded where supported—reads and applies `PROJECT_SETUP.md`, `DOCS_SETUP.md` and the other setup files, presents every required maintainer decision and performs the repository updates; the maintainer does not execute those files separately.
 
 ```text
 We are initializing a new technical documentation project from the AGIT Documentation Template.
+
+Apply AGENTS.md as the durable repository operating baseline. If it was not
+loaded automatically, read it first. This prompt defines the one-time
+initialization workflow; do not treat AGENTS.md alone as an instruction to
+initialize or modify the template.
 
 Please first read the complete repository and all relevant project rules, especially README.md, ChatGPT.md, CODEX.md, DOCUMENTATION.md, REPOSITORY.md, PROJECT_SETUP.md, DOCS_SETUP.md, PROJECT_CONTEXT.md, DOCUMENTATION_TYPE_PROFILES.md, QUARTO.md, FEEDBACK_WORKFLOW.md, AUDIENCE.md, STYLE_GUIDE.md, SCREENSHOTS.md, LINKS.md, VISUAL_QA.md, and the DDR guidance.
 
@@ -42,6 +47,11 @@ After collecting the required information, update the repository files to
 reflect the concrete project, including `_quarto.yml` and the files in `docs/`
 when Quarto is used. Confirm that the structured initialization is complete and
 that required placeholders have been resolved before large-scale drafting.
+
+Adapt AGENTS.md only where the concrete project's commands, directory layout or
+validation procedures differ from the template. Preserve its role as a concise
+router to authoritative guidance, including its safety and documentation
+boundaries.
 
 Staging and unstaging do not require a control word, but perform them only when
 I specifically request the index action or authorize the corresponding commit.

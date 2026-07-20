@@ -13,6 +13,10 @@ the new context window.
 We are continuing an existing technical documentation project in a new context
 window.
 
+Apply AGENTS.md as the durable repository operating baseline. If it was not
+loaded automatically, read it first. This prompt defines the re-entry procedure
+for the current session.
+
 Do not repeat project initialization and do not rely on earlier chat history.
 Reconstruct the maintained documentation state before drafting or revising.
 
@@ -28,9 +32,10 @@ Read the repository in this order:
    link and visual-QA guidance for the active milestone.
 6. Subject to the sensitivity rules below, read the active maintained files in
    docs/ and relevant Decision Records. Treat generated HTML or PDF as review
-   output, not as the source of truth. Do not repeat PROJECT_SETUP.md or
-   INITIAL_PROMPT.md unless setup is incomplete or relevant to the requested
-   work.
+   output, not as the source of truth. Do not execute PROJECT_SETUP.md or
+   INITIAL_PROMPT.md as part of continuation. If initialization appears
+   incomplete, report that state and propose returning to INITIAL_PROMPT.md as
+   a separate workflow.
 
 Use read-only Git commands to inspect the branch, working tree, recent commits,
 latest relevant tag and all staged or unstaged changes. Compare the repository

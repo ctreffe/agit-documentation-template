@@ -141,6 +141,7 @@ Vorlagen befinden sich in [decisions/](decisions/). Erstelle einen Record nur, w
 
 ### Zusammenarbeit, Setup und Prozess
 
+- **`AGENTS.md`** ist der kompakte, automatisch geladene Einstiegspunkt für KI-Agenten. Die Datei führt zu den vollständigen Dokumentations-, Quellenschutz- und Validierungsleitlinien, ohne sie zu duplizieren.
 - **`ChatGPT.md`** definiert Maintainer-Autorität, Repository-zentrierte Dokumentationsarbeit, Milestones, Feedback und Publikationsgrenzen.
 - **`CODEX.md`** definiert lokalen Assistant-Zugriff, Behandlung sensibler Quellen, Rendering, Git und Übergaberegeln.
 - **`PROJECT_SETUP.md`, `INITIAL_PROMPT.md` und `DOCS_SETUP.md`** legen Repository-Identität, Dokumentationstyp, Zielgruppe, Sprachen, Quellenmodell, Quarto-System und QA-Erwartungen fest. Die ersten beiden bleiben normalerweise als Initialisierungsprovenienz erhalten.
@@ -169,6 +170,7 @@ Vorlagen befinden sich in [decisions/](decisions/). Erstelle einen Record nur, w
 In einem abgeleiteten Dokumentationsprojekt:
 
 - ersetze Platzhalter für Identität, Zielgruppe und Dokumentationsseiten durch konkrete Projektinhalte;
+- behalte `AGENTS.md` als automatischen Agenten-Einstiegspunkt und passe die Datei an;
 - vervollständige `DOCS_SETUP.md`, `AUDIENCE.md` und `PROJECT_CONTEXT.md`;
 - passe `_quarto.yml`, `docs/`, Stil-, Link-, Screenshot- und visuelle QA-Leitlinien an;
 - behalte `PROJECT_SETUP.md` und `INITIAL_PROMPT.md` als Initialisierungsprovenienz;
