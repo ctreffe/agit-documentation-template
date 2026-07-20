@@ -13,6 +13,8 @@ All notable changes to this template will be documented in this file.
 
 - Align the initialization and continuation prompts with `AGENTS.md`: setup is
   an explicit one-time workflow, while continuation only reconstructs state.
+- Expand continuous-improvement guidance with documentation evidence,
+  candidate review and transparent, unlinked private Templateverse governance.
 
 ## [v0.4.0] - 2026-07-20
 

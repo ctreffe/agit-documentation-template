@@ -210,7 +210,11 @@ Halte erzeugte Websites, Previews, Rohcaptures und Review-Artefakte in den durch
 
 Nutze Harmonisierung, um ein abgeleitetes Dokumentationsprojekt mit relevanten Template-Entwicklungen, aktuellen Zielgruppenbedürfnissen, gepflegten Quellen, Outputs und Roadmap abzugleichen. Nutze Retrospektiven separat, um Zusammenarbeit, Übergaben und Review-Praktiken zu bewerten.
 
-Wiederverwendbare Verbesserungen sollen in betroffene Leitlinien integriert statt als isolierte Notizen angehängt werden. Eine einzelne Projektbeobachtung ist nicht automatisch eine Template-Regel, und Publikationsentscheidungen verbleiben beim Maintainer.
+Behandle Feedback-Muster, Navigationsprobleme, Renderfehler, Visual-QA-Befunde und Publikationserfahrungen als Evidenz für mögliche Verbesserungen. Eine einzelne Projektbeobachtung ist nicht automatisch eine Template-Regel; prüfe Zielgruppe, Dokumentationstyp, Ausgabeformat und Wartungskosten, bevor Du sie verallgemeinerst.
+
+Der Maintainer koordiniert die templateübergreifende Weiterentwicklung in einem privaten Governance-Repository namens `agit-templateverse`. Es dokumentiert gemeinsame Konventionen, bewusste Spezialisierungen und Evidenz aus abgeleiteten Projekten. Das Repository wird bewusst nicht verlinkt, da Template-Nutzer:innen keinen Zugriff darauf benötigen.
+
+Die Governance-Koordination erzeugt keine verborgenen Dokumentationsanforderungen. Jede Änderung, die dieses Template betrifft, muss hier durch gepflegte Leitlinien, gegebenenfalls Documentation Decision Records, den Changelog und die Release-Historie abgebildet werden. Wiederverwendbare Verbesserungen sollen in betroffene Quellen-, Feedback-, Render- und QA-Leitlinien integriert werden; Publikationsentscheidungen verbleiben beim Maintainer.
 
 ## Lizenz
 

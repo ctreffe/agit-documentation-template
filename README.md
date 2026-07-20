@@ -210,7 +210,11 @@ Keep generated sites, previews, raw captures and review artifacts in the ignored
 
 Use harmonization to reconcile a derived documentation project with relevant template developments, current audience needs, maintained sources, outputs and roadmap. Use retrospectives separately to evaluate collaboration, handoffs and review practices.
 
-Reusable improvements should be integrated across affected guidance instead of appended as isolated notes. A single project observation is not automatically a template rule, and publication decisions remain with the maintainer.
+Treat feedback patterns, navigation problems, rendering failures, visual-QA findings and publication lessons as evidence for possible improvement. A single project observation is not automatically a template rule; consider audience, documentation type, output format and maintenance cost before generalizing it.
+
+The maintainer coordinates cross-template evolution in a private governance repository named `agit-templateverse`. It records shared conventions, deliberate specializations and evidence from derived projects. The repository is intentionally not linked because template users do not need access to it.
+
+Governance coordination does not create hidden documentation requirements. Every change that affects this template must be represented here through maintained guidance, Documentation Decision Records where appropriate, the changelog and release history. Reusable improvements should be integrated across affected source, feedback, rendering and QA guidance, while publication decisions remain with the maintainer.
 
 ## License
 
