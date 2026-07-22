@@ -1,6 +1,6 @@
-# Screenshots and Visual Artifacts
+# Screenshots and Visual Files
 
-Screenshots are documentation artifacts. They should be intentional, current, readable, and safe to publish.
+Screenshots are documentation files. They should be intentional, current, readable, and safe to publish.
 
 ## When to use screenshots
 

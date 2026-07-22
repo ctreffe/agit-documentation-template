@@ -1,6 +1,6 @@
 # Visual QA
 
-Use this checklist before publishing or closing a documentation milestone that includes screenshots, diagrams, rendered pages, PDFs, or other visual artifacts.
+Use this checklist before publishing or closing a documentation milestone that includes screenshots, diagrams, rendered pages, PDFs, or other visual files.
 
 ## Screenshots
 

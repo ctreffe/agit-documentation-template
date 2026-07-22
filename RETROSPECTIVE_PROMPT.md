@@ -19,7 +19,7 @@ implications to a later harmonization.
 2. Read the relevant milestone, current CHANGELOG.md sections and
    collaboration-related Decision Records.
 3. Read CONTINUATION_PROMPT.md and HARMONIZATION_PROMPT.md.
-4. Inspect relevant commit history, numbered handoffs, feedback artifacts and
+4. Inspect relevant commit history, numbered handoffs, feedback records and
    documented QA decisions with read-only commands and subject to documented
    access boundaries. Preserve uncommitted work.
 5. Use current-session evidence and maintainer reports without claiming access

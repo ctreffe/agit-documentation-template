@@ -56,7 +56,7 @@ Check internal consistency across:
 - navigation, structure, terminology, links and cross-references
 - screenshots, diagrams, captions, alt text and visual QA
 - Quarto configuration, source files, rendered outputs and publication state
-- feedback scope, review artifacts, maintainer decisions and source transfer
+- feedback scope, review files, maintainer decisions and source transfer
 - source provenance, sensitivity, derivatives and disclosure boundaries
 - Decision Records and intentional deviations
 - actual validation evidence versus documented claims

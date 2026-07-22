@@ -86,7 +86,7 @@ mapping and maintainer confirmation.
 
 In both cases, Quarto files and other maintained repository sources remain
 authoritative. Follow `FEEDBACK_WORKFLOW.md` when rendering, receiving,
-interpreting and closing feedback artifacts.
+interpreting and closing feedback files.
 
 ## Bilingual documentation
 

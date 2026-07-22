@@ -15,7 +15,7 @@ Use a DDR when a decision affects:
 - Documentation structure or navigation.
 - Audience assumptions.
 - Terminology.
-- Screenshot or visual artifact policy.
+- Screenshot or visual-file policy.
 - Link and source model.
 - Publication workflow.
 - Versioning or milestone scope.

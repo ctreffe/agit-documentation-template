@@ -6,11 +6,15 @@ All notable changes to this template will be documented in this file.
 
 ### Added
 
+- Add an inventory-based workflow for external files and sources with
+  `intake`, `restricted`, `local` and `versioned` input zones.
 - Add `AGENTS.md` as the concise, automatically loaded entry point that routes
   AI agents to documentation, source-safety and validation guidance.
 
 ### Changed
 
+- Clarify the transition from incoming files to maintained documentation,
+  publication assets and review files, and simplify user-facing terminology.
 - Align the initialization and continuation prompts with `AGENTS.md`: setup is
   an explicit one-time workflow, while continuation only reconstructs state.
 - Expand continuous-improvement guidance with documentation evidence,

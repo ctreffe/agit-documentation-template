@@ -32,7 +32,7 @@ Template files describe how a documentation project should be initialized, maint
 - `QUARTO.md`: Quarto source format, rendering, bilingual structure, and output QA.
 - `AUDIENCE.md`: Audience model template.
 - `STYLE_GUIDE.md`: Writing and style guidance for technical documentation.
-- `SCREENSHOTS.md`: Screenshot and visual artifact guidance.
+- `SCREENSHOTS.md`: Screenshot and visual-file guidance.
 - `LINKS.md`: Internal and external link discipline.
 - `VISUAL_QA.md`: Visual documentation QA checklist.
 - `REPOSITORY.md`: Repository organization and lifecycle rules.
@@ -61,13 +61,13 @@ the metadata they represent.
 
 Derived projects should distinguish between current documentation state and project history. The main documentation should describe what is true now. Historical rationale belongs in decision records, changelog entries, or dedicated notes when needed.
 
-## Documentation artifacts
+## Documentation files
 
 Technical documentation may contain Quarto Markdown sources, text, diagrams,
 screenshots, exported DOCX or PDF files, generated pages, review annotations,
 recordings, and structured reference data. The repository should make clear
-which artifacts are source material, which are maintained documentation, which
-are review artifacts, and which are generated output.
+which files are source material, which are maintained documentation, which
+are review files, and which are generated output.
 
 Rendered or annotated DOCX and PDF files do not replace their maintained
 sources. Accepted feedback is complete only after it has been transferred to
@@ -77,4 +77,4 @@ the authoritative source and validated there.
 
 Raw screenshots, logs, exports, configuration values, internal URLs, and user data can be sensitive. They should not be committed or read by the assistant until the maintainer has confirmed that this is appropriate.
 
-If documentation requires evidence from sensitive material, create sanitized derivatives or redacted artifacts whenever possible.
+If documentation requires evidence from sensitive material, create sanitized derivatives or redacted files whenever possible.

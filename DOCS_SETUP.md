@@ -110,8 +110,8 @@ Define the review model according to `FEEDBACK_WORKFLOW.md`:
 - Whether annotated PDFs are expected for layout, table, figure or print QA.
 - How external feedback will be curated by the maintainer, including whether
   `Maintainer:` comments will be used.
-- Where rendered and annotated review artifacts will be stored locally.
-- Which review artifacts the assistant may inspect, which may be versioned and
+- Where rendered and annotated review files will be stored locally.
+- Which review files the assistant may inspect, which may be versioned and
   which may be published or shared.
 - How review decisions and closed feedback will be traced.
 
@@ -122,7 +122,7 @@ Before the first substantive documentation milestone, the repository should cont
 - Completed `PROJECT_CONTEXT.md`.
 - Selected documentation type profile and language model.
 - Confirmed Quarto model and output formats.
-- Confirmed feedback channels, artifact scope and review-handling rules.
+- Confirmed feedback channels, file scope and review-handling rules.
 - Adapted audience, style, screenshot, link, and visual QA rules.
 - Initial documentation structure.
 - Any required DDRs.

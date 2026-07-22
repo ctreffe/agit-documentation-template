@@ -28,6 +28,7 @@
 - [AGIT Templateverse](#agit-templateverse)
 - [Wann dieses Template geeignet ist](#wann-dieses-template-geeignet-ist)
 - [Projektinitialisierung](#projektinitialisierung)
+- [Externe Dateien und Quellen](#externe-dateien-und-quellen)
 - [Empfohlene Workflows](#empfohlene-workflows)
 - [Git-Index und geschützte Git-Aktionen](#git-index-und-geschützte-git-aktionen)
 - [Decision Records](#decision-records)
@@ -42,13 +43,13 @@
 
 Das AGIT Documentation Template ist ein Ausgangspunkt für technische Dokumentationsprojekte, die expliziten Kontext, klare Zuständigkeiten, reproduzierbare Zusammenarbeit, dokumentierte Entscheidungen und prüfbare Publikations-Milestones benötigen. Es unterstützt Benutzer- und Administrationshandbücher, Tutorials, Betriebsanweisungen, Migrations- und Fehlerbehebungsleitfäden, technische Konzepte, Architekturdokumentation und gemischte Dokumentationswebsites.
 
-Quarto Markdown ist das bevorzugte gepflegte Quellformat. Die Baseline rendert eine bilinguale HTML-Website und kann für DOCX- oder PDF-Review-Outputs angepasst werden. Links, Screenshots, Diagramme und erzeugte Outputs werden als Dokumentationsartefakte mit Provenienz, Sensitivitätsprüfung und Qualitätssicherung behandelt.
+Quarto Markdown ist das bevorzugte gepflegte Quellformat. Die Baseline rendert eine bilinguale HTML-Website und kann für DOCX- oder PDF-Review-Outputs angepasst werden. Links, Screenshots, Diagramme und erzeugte Outputs werden als Dokumentationsdateien mit Provenienz, Sensitivitätsprüfung und Qualitätssicherung behandelt.
 
 ## Kernprinzip
 
 Der Maintainer verantwortet Zweck, Umfang, Struktur, technische Korrektheit, Zielgruppenpassung und Veröffentlichungsentscheidungen der Dokumentation. Der Assistant kann beim Entwerfen, Umstrukturieren, Konsistenzprüfen, Planen von Visualisierungen und Prüfen von Outputs helfen, ersetzt aber weder das Maintainer-Urteil noch trifft er Veröffentlichungsentscheidungen.
 
-Gepflegte Repository-Quellen sind maßgeblich. Gerenderte Websites, DOCX-Dateien, PDFs und annotierte Rückläufe sind Outputs oder Review-Artefakte, bis akzeptiertes Feedback in die Quelle zurückübertragen und dort validiert wurde.
+Gepflegte Repository-Quellen sind maßgeblich. Gerenderte Websites, DOCX-Dateien, PDFs und annotierte Rückläufe sind Outputs oder Review-Dateien, bis akzeptiertes Feedback in die Quelle zurückübertragen und dort validiert wurde.
 
 ## AGIT Templateverse
 
@@ -85,7 +86,18 @@ Der Agent:
 7. rendert und prüft die initiale Dokumentations-Baseline; und
 8. übergibt den initialisierten Stand mit Prüfergebnissen, offenen Entscheidungen und vorgeschlagenen Commit-Metadaten.
 
-`PROJECT_SETUP.md` und `DOCS_SETUP.md` bleiben Checklisten des Agenten und Provenienzartefakte der Initialisierung. `INITIAL_PROMPT.md` ist der einzige benutzerorientierte Einstiegspunkt, der sie aktiviert.
+`PROJECT_SETUP.md` und `DOCS_SETUP.md` bleiben Checklisten des Agenten und dokumentieren die Methode der Initialisierung. `INITIAL_PROMPT.md` ist der einzige benutzerorientierte Einstiegspunkt, der sie aktiviert.
+
+## Externe Dateien und Quellen
+
+Lege neu erhaltene Screenshots, Exporte, Logs, Tickets, Referenzdokumente und andere externe Dateien zunächst in `input/intake/` ab. Dokumentiere sichere Metadaten, Provenienz und Klassifizierung in `input/INVENTORY.md`; verwende die ignorierte Datei `input/INVENTORY.local.md`, wenn Dateinamen, Pfade oder Details selbst sensibel sind.
+
+- **`input/intake/`** ist der ignorierte Eingangsbereich für noch nicht klassifizierte Dateien. Ihre bloße Anwesenheit erlaubt keinen Zugriff durch den Assistant.
+- **`input/restricted/`** ist ignoriert und für Dateien bestimmt, die nur der Maintainer oder ausdrücklich freigegebene lokale Prüfungen lesen dürfen.
+- **`input/local/`** ist ignoriert und enthält Dateien, die der Assistant lokal verarbeiten darf, die aber nicht in Git gelangen dürfen.
+- **`input/versioned/`** enthält geprüfte externe Dateien, die versioniert werden dürfen.
+
+Assistant-Zugriff, Git-Versionierung und Veröffentlichung sind getrennte Entscheidungen. Eine Verschiebung dokumentiert die Klassifizierung, erweitert aber keine Berechtigung. Wenn eine freigegebene Datei zu gepflegter Dokumentation, einem Publikationsasset oder einem Review-Input wird, verschiebe sie nach `docs/`, `assets/` oder `review/`, sofern dieser Ort ihre Rolle klarer ausdrückt, und bewahre die Provenienz im Inventar.
 
 ## Empfohlene Workflows
 
@@ -107,9 +119,9 @@ Das Projekt unterstützt komplementäre Review-Kanäle:
 2. **Maintainer-DOCX-Review:** Kommentare und Änderungsverfolgung werden in die gepflegte Quelle zurückübertragen, wenn ihre Intention eindeutig ist.
 3. **Externes DOCX-Review:** Nicht kuratiertes externes Feedback wird als nummerierte Punkte dargestellt, bis der Maintainer es akzeptiert, ablehnt, qualifiziert oder zurückstellt.
 4. **Annotiertes PDF-Review:** Layout-, Paginierungs-, Tabellen-, Abbildungs- und Druckprobleme werden auf ihre Quellstellen abgebildet und im gerenderten Format erneut validiert.
-5. **Website-Review:** Jedes Artefakt benennt die abgedeckte Seite, das Kapitel, Bundle oder den Snapshot; ein mehrdeutiger Export gilt nicht als Review der gesamten Website.
+5. **Website-Review:** Jede Review-Datei benennt die abgedeckte Seite, das Kapitel, Bundle oder den Snapshot; ein mehrdeutiger Export gilt nicht als Review der gesamten Website.
 
-Assistant-Zugriff, Git-Versionierung und Veröffentlichung von Review-Artefakten sind getrennte Entscheidungen. [FEEDBACK_WORKFLOW.md](FEEDBACK_WORKFLOW.md) beschreibt den vollständigen nachvollziehbaren Review-Zyklus.
+Assistant-Zugriff, Git-Versionierung und Veröffentlichung von Review-Dateien sind getrennte Entscheidungen. [FEEDBACK_WORKFLOW.md](FEEDBACK_WORKFLOW.md) beschreibt den vollständigen nachvollziehbaren Review-Zyklus.
 
 ## Git-Index und geschützte Git-Aktionen
 
@@ -158,12 +170,13 @@ Vorlagen befinden sich in [decisions/](decisions/). Erstelle einen Record nur, w
 - **`FEEDBACK_WORKFLOW.md`** definiert quellenmaßgebliche DOCX-, PDF- und Website-Review-Zyklen sowie den Umgang mit Maintainer- und externem Feedback.
 - **`decisions/`** enthält DDR-, PDR- und ADR-Vorlagen sowie akzeptierte dauerhafte Entscheidungen in abgeleiteten Projekten.
 
-### Quarto-Quellen, Assets und Review-Artefakte
+### Quarto-Quellen, Assets und Review-Dateien
 
 - **`_quarto.yml`** definiert Dokumentationswebsite, Navigation, Output-Verzeichnis und Renderumfang. Abgeleitete Projekte passen Titel, Seiten, Sprachen und erforderliche Formate an.
 - **`docs/`** enthält die gepflegten Quarto-Dokumentationsquellen einschließlich englischer und deutscher Einstiegsseiten in der Baseline. Diese Quellen sind gegenüber gerenderten Outputs maßgeblich.
-- **`assets/`** enthält bewusst gepflegte Bilder, Diagramme und andere Publikationsassets. Jedes Artefakt soll einen klaren Zweck, Provenienz und Sensitivitätsstatus besitzen.
-- **`review/`** dokumentiert lokale Review-Orte. Gerenderte und annotierte Artefakte werden standardmäßig ignoriert, weil Review-Zugriff, Git-Versionierung und Veröffentlichung getrennte Entscheidungen benötigen.
+- **`input/`** klassifiziert eingehende externe Dateien und dokumentiert ihre Provenienz, bevor sie in gepflegte Dokumentationsworkflows gelangen.
+- **`assets/`** enthält bewusst gepflegte Bilder, Diagramme und andere Publikationsdateien. Jede Datei soll einen klaren Zweck, Provenienz und Sensitivitätsstatus besitzen.
+- **`review/`** dokumentiert lokale Review-Orte. Gerenderte und annotierte Review-Dateien werden standardmäßig ignoriert, weil Review-Zugriff, Git-Versionierung und Veröffentlichung getrennte Entscheidungen benötigen.
 
 ## Template- und abgeleitete Projektdateien
 
@@ -176,7 +189,7 @@ In einem abgeleiteten Dokumentationsprojekt:
 - behalte `PROJECT_SETUP.md` und `INITIAL_PROMPT.md` als Initialisierungsprovenienz;
 - behalte die Prompts für Fortsetzung, Harmonisierung und Retrospektive zur späteren Nutzung;
 - pflege `DOCUMENTATION.md`, `REPOSITORY.md` und `FEEDBACK_WORKFLOW.md` als aktive Projektregeln;
-- halte gerenderte und annotierte Artefakte standardmäßig lokal und versioniere sie erst nach bewusster Prüfung;
+- halte gerenderte und annotierte Review-Dateien standardmäßig lokal und versioniere sie erst nach bewusster Prüfung;
 - erstelle echte Decision Records nur für dauerhafte Projekt-, Dokumentations- oder Architekturentscheidungen.
 
 Halte initiale Template-Version und -Commit, letzte Harmonisierungs-Baseline, Lebenszyklusstatus und beabsichtigte Abweichungen in `PROJECT_CONTEXT.md` fest. Konkrete Zielgruppenentscheidungen und akzeptierte Decision Records bleiben gegenüber späteren generischen Template-Änderungen maßgeblich.
@@ -204,7 +217,7 @@ Für den Standard-Quarto-Workflow:
 4. Installiere [LibreOffice](https://www.libreoffice.org/download/instructions/), wenn DOCX-Outputs für visuelle QA in PDF oder Seitenbilder gerendert werden müssen.
 5. Verwende [R](https://cran.r-project.org/) und [RStudio](https://posit.co/downloads/) nur, wenn die Dokumentation R-Code, Datenanalysen, Plots oder R-basierte Quarto-Erweiterungen enthält; für gewöhnliche Markdown-Dokumentation sind sie nicht erforderlich.
 
-Halte erzeugte Websites, Previews, Rohcaptures und Review-Artefakte in den durch `.gitignore` definierten ignorierten Orten, sofern das Projekt nicht bewusst ein versioniertes Artefakt freigibt.
+Halte erzeugte Websites, Previews, ungeprüfte Captures und Review-Dateien in den durch `.gitignore` definierten ignorierten Orten, sofern das Projekt nicht bewusst eine versionierte Datei oder einen versionierten Output freigibt.
 
 ## Kontinuierliche Verbesserung
 

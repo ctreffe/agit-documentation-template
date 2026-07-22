@@ -15,11 +15,11 @@ This repository is a reusable template for AI-assisted technical documentation p
 - Treat assistant access, Git versioning and publication as separate maintainer
   decisions; approval for one does not authorize another.
 - Treat automated privacy, secret or content checks as warnings rather than
-  proof that an artifact is safe.
+  proof that a file is safe.
 - Keep technical documentation task-oriented, precise, and reviewable.
-- Treat links, screenshots, diagrams, and generated outputs as documentation artifacts that need provenance and QA.
+- Treat links, screenshots, diagrams, and generated outputs as documentation files that need provenance and QA.
 - Treat maintained Quarto or other repository sources as authoritative over
-  rendered or annotated DOCX and PDF review artifacts.
+  rendered or annotated DOCX and PDF review files.
 - Inspect supplied annotated DOCX or PDF files only after assistant access has
   been approved. Transfer clear maintainer comments and Track Changes to the
   maintained source; present unresolved external or ambiguous feedback as

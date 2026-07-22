@@ -28,9 +28,11 @@ maintainer decision when it could materially affect the result.
 - Treat documentation intent, information architecture, technical truth and
   publication decisions as maintainer-owned.
 - Treat maintained repository sources as authoritative over rendered or
-  annotated DOCX, PDF and website review artifacts.
+  annotated DOCX, PDF and website review files.
 - Do not inspect potentially sensitive screenshots, logs, exports, tickets or
   operational material without maintainer approval.
+- Classify new external files through `input/`; presence in `input/intake/`
+  never authorizes assistant access.
 - Keep audience, navigation, links, visuals, feedback handling and maintained
   source synchronized across affected documentation.
 - Follow the authorization rules in `CODEX.md`; an edit request does not by

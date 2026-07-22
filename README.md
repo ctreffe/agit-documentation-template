@@ -28,6 +28,7 @@
 - [AGIT Templateverse](#agit-templateverse)
 - [When to Use This Template](#when-to-use-this-template)
 - [Project Initialization](#project-initialization)
+- [External Files and Sources](#external-files-and-sources)
 - [Recommended Workflows](#recommended-workflows)
 - [Git Index and Protected Git Actions](#git-index-and-protected-git-actions)
 - [Decision Records](#decision-records)
@@ -42,13 +43,13 @@
 
 The AGIT Documentation Template is a starting point for technical documentation projects that require explicit context, clear ownership, reproducible collaboration, documented decisions and reviewable publication milestones. It supports user guides, administrator guides, tutorials, operating procedures, migration and troubleshooting guides, technical concepts, architecture documentation and mixed documentation sites.
 
-Quarto Markdown is the preferred maintained source format. The baseline renders a bilingual HTML website and can be adapted for DOCX or PDF review outputs when a project needs them. Links, screenshots, diagrams and generated outputs are treated as documentation artifacts with provenance, sensitivity review and quality assurance.
+Quarto Markdown is the preferred maintained source format. The baseline renders a bilingual HTML website and can be adapted for DOCX or PDF review outputs when a project needs them. Links, screenshots, diagrams and generated outputs are treated as documentation files with provenance, sensitivity review and quality assurance.
 
 ## Core Principle
 
 The maintainer owns documentation purpose, scope, structure, technical correctness, audience fit and publication decisions. The assistant may help draft, restructure, check consistency, plan visuals and review outputs, but it does not replace maintainer judgment or make publication decisions.
 
-Maintained repository sources are authoritative. Rendered websites, DOCX files, PDFs and annotated returns are outputs or review artifacts until accepted feedback has been transferred back to the source and validated there.
+Maintained repository sources are authoritative. Rendered websites, DOCX files, PDFs and annotated returns are outputs or review files until accepted feedback has been transferred back to the source and validated there.
 
 ## AGIT Templateverse
 
@@ -87,6 +88,17 @@ The agent then:
 
 `PROJECT_SETUP.md` and `DOCS_SETUP.md` remain agent checklists and initialization provenance. `INITIAL_PROMPT.md` is the single user-facing entry point that activates them.
 
+## External Files and Sources
+
+Place newly received screenshots, exports, logs, tickets, reference documents and other external files in `input/intake/` before deciding how they may be used. Record safe metadata, provenance and classification in `input/INVENTORY.md`; use the ignored `input/INVENTORY.local.md` when filenames, paths or details are themselves sensitive.
+
+- **`input/intake/`** is the ignored arrival area for unclassified files. Presence never authorizes assistant access.
+- **`input/restricted/`** is ignored and reserved for files that only the maintainer, or explicitly approved local checks, may inspect.
+- **`input/local/`** is ignored and holds files the assistant may process locally but that must not enter Git.
+- **`input/versioned/`** contains reviewed external files that may be committed.
+
+Assistant access, Git versioning and publication are separate decisions. Moving a file records classification but grants no additional permission. Once an approved file becomes maintained documentation, a publication asset or a review input, move it to `docs/`, `assets/` or `review/` when that location better communicates its role, and preserve its provenance in the inventory.
+
 ## Recommended Workflows
 
 ### Documentation Workflow
@@ -107,9 +119,9 @@ The project supports complementary review channels:
 2. **Maintainer DOCX review:** comments and Track Changes are transferred back to the maintained source when their intent is clear.
 3. **External DOCX review:** uncurated external feedback is presented as numbered issues until the maintainer accepts, rejects, qualifies or defers it.
 4. **Annotated PDF review:** layout, pagination, tables, figures and print issues are mapped back to their source locations and revalidated in the rendered format.
-5. **Website review:** every artifact names the page, chapter, bundle or snapshot it covers; an ambiguous export is not treated as review of the whole site.
+5. **Website review:** every review file names the page, chapter, bundle or snapshot it covers; an ambiguous export is not treated as review of the whole site.
 
-Assistant access, Git versioning and publication of review artifacts are separate decisions. See [FEEDBACK_WORKFLOW.md](FEEDBACK_WORKFLOW.md) for the complete traceable review cycle.
+Assistant access, Git versioning and publication of review files are separate decisions. See [FEEDBACK_WORKFLOW.md](FEEDBACK_WORKFLOW.md) for the complete traceable review cycle.
 
 ## Git Index and Protected Git Actions
 
@@ -158,12 +170,13 @@ Templates live in [decisions/](decisions/). Create a record only when the ration
 - **`FEEDBACK_WORKFLOW.md`** defines source-authoritative DOCX, PDF and website review cycles and the handling of maintainer versus external feedback.
 - **`decisions/`** contains DDR, PDR and ADR templates and accepted durable decisions in derived projects.
 
-### Quarto Sources, Assets and Review Artifacts
+### Quarto Sources, Assets and Review Files
 
 - **`_quarto.yml`** defines the documentation website, navigation, output directory and render scope. Derived projects adapt its title, pages, languages and required formats.
 - **`docs/`** contains the maintained Quarto documentation sources, including English and German entry pages in the baseline. These sources are authoritative over rendered output.
-- **`assets/`** contains deliberately maintained images, diagrams and other publication assets. Each artifact should have a clear purpose, provenance and sensitivity status.
-- **`review/`** documents local review locations. Rendered and annotated artifacts are ignored by default because review access, Git versioning and publication require separate decisions.
+- **`input/`** classifies incoming external files and records their provenance before they enter maintained documentation workflows.
+- **`assets/`** contains deliberately maintained images, diagrams and other publication files. Each file should have a clear purpose, provenance and sensitivity status.
+- **`review/`** documents local review locations. Rendered and annotated review files are ignored by default because review access, Git versioning and publication require separate decisions.
 
 ## Template and Derived Project Files
 
@@ -176,7 +189,7 @@ In a derived documentation project:
 - retain `PROJECT_SETUP.md` and `INITIAL_PROMPT.md` as initialization provenance;
 - retain the continuation, harmonization and retrospective prompts for later use;
 - maintain `DOCUMENTATION.md`, `REPOSITORY.md` and `FEEDBACK_WORKFLOW.md` as active project rules;
-- keep rendered and annotated artifacts local by default and version them only after deliberate review;
+- keep rendered and annotated review files local by default and version them only after deliberate review;
 - create real Decision Records only for durable project, documentation or architecture choices.
 
 Record the initial template version and commit, last harmonization baseline, lifecycle status and intentional deviations in `PROJECT_CONTEXT.md`. Concrete audience decisions and accepted Decision Records remain authoritative over later generic template changes.
@@ -204,7 +217,7 @@ For the standard Quarto workflow:
 4. Install [LibreOffice](https://www.libreoffice.org/download/instructions/) when DOCX outputs must be rendered to PDF or page images for visual QA.
 5. Use [R](https://cran.r-project.org/) and [RStudio](https://posit.co/downloads/) only when the documentation includes R code, data analysis, plots or R-based Quarto extensions; they are not required for ordinary Markdown documentation.
 
-Keep generated sites, previews, raw captures and review artifacts in the ignored locations defined by `.gitignore` unless the project deliberately approves a versioned artifact.
+Keep generated sites, previews, unreviewed captures and review files in the ignored locations defined by `.gitignore` unless the project deliberately approves a versioned file or output.
 
 ## Continuous Improvement
 

@@ -17,21 +17,26 @@ Desktop.ini
 .tmp/
 tmp/
 
-# Generated documentation artifacts
+# Generated documentation outputs
 _site/
 .quarto/
 *_files/
 exports/
 renders/
 previews/
-artifacts/
+/generated/
 deliverables/
 review/rendered/
 review/annotated/
 
-# Potentially sensitive local captures
-captures/raw/
-screenshots/raw/
+# External files and sources
+/input/intake/**
+!/input/intake/README.md
+/input/restricted/**
+!/input/restricted/README.md
+/input/local/**
+!/input/local/README.md
+/input/INVENTORY.local.md
 
 # Logs
 *.log

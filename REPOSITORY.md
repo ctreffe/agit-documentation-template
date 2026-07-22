@@ -1,6 +1,6 @@
 # Repository Model
 
-This repository follows a repository-first documentation workflow. Durable context, decisions, and documentation artifacts should be versioned whenever they are part of the project record.
+This repository follows a repository-first documentation workflow. Durable context, decisions, and documentation files should be versioned whenever they are part of the project record.
 
 Use `CONTINUATION_PROMPT.md` at the start of a new context window or assistant
 session to reconcile `PROJECT_CONTEXT.md`, maintained documentation and current
@@ -26,6 +26,7 @@ read-only Git evidence.
 - `CHANGELOG.md`: Version history.
 - `VERSION`: Current template or project version.
 - `_quarto.yml`: Quarto project configuration.
+- `input/`: Intake, classification and inventory for external files and sources.
 - `docs/`: Maintained Quarto source files.
 - `assets/`: Maintained screenshots, figures, and diagrams.
 
@@ -47,21 +48,23 @@ not retain the Documentation Template version as their project version or show
 automation that does not exist. English and German badge blocks remain
 identical when both READMEs are maintained.
 
-## Inputs, maintained files, and outputs
+## External files, maintained documentation and outputs
 
-Separate these categories clearly:
+Use `input/intake/`, `input/restricted/`, `input/local/` and
+`input/versioned/` to classify external screenshots, logs, exports, tickets,
+source documents and operational data. Record safe provenance and handling
+status in `input/INVENTORY.md`; use the ignored `input/INVENTORY.local.md` for
+sensitive names, paths or details.
 
-- Raw inputs: screenshots, logs, exports, tickets, notes, source documents, and operational data.
-- Sanitized inputs: redacted or transformed versions that may be used safely.
-- Maintained documentation: Quarto source files and supporting Markdown that represent the project documentation.
-- Generated outputs: rendered HTML, PDFs, screenshots, previews, or release artifacts.
+Maintained Quarto and Markdown sources belong in `docs/`, publication images
+and diagrams in `assets/`, and local review files in `review/`. Generated HTML,
+PDFs and previews remain outputs. Moving an approved file into one of these
+locations communicates its durable role but does not grant publication rights.
 
-Raw inputs and generated outputs should not be committed by default unless the project explicitly needs them and they have been reviewed. Assistant access, Git versioning and publication or other sharing are separate approval decisions; none implies another.
-
-Establish `.gitignore` rules and a source inventory before placing sensitive
-raw inputs in the repository working tree. Before preparing a commit, review
-new and untracked files for personal data, internal system details, secrets,
-confidential information, licensing restrictions and unredacted visuals.
+Assistant access, Git versioning and publication or other sharing are separate
+decisions. Before preparing a commit, review new and untracked files for
+personal data, internal system details, secrets, confidential information,
+licensing restrictions and unredacted visuals.
 
 Rendered pages, screenshots, tables, interactive elements, embedded resources,
 archives and file metadata may disclose sensitive information even when raw

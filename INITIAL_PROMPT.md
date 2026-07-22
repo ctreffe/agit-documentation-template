@@ -32,8 +32,8 @@ Ask me for all missing maintainer decisions, including:
   in Git, and which ignore rules must exist first.
 - Screenshot, diagram, visual QA, and link expectations.
 - Expected feedback channels, the explicit scope of DOCX or PDF review
-  artifacts, external-feedback curation, and separate assistant-access, Git
-  versioning and publication rules for those artifacts.
+  files, external-feedback curation, and separate assistant-access, Git
+  versioning and publication rules for those files.
 - The first roadmap milestone, its validation objective and the first small
   reviewable steps below it.
 - Initialization provenance: keep PROJECT_SETUP.md and INITIAL_PROMPT.md under
@@ -52,6 +52,13 @@ Adapt AGENTS.md only where the concrete project's commands, directory layout or
 validation procedures differ from the template. Preserve its role as a concise
 router to authoritative guidance, including its safety and documentation
 boundaries.
+
+Establish the external-file workflow during initialization. Place unclassified
+arrivals in `input/intake/`, classify them into `input/restricted/`,
+`input/local/` or `input/versioned/`, and maintain safe metadata in
+`input/INVENTORY.md`. Treat assistant access, Git versioning and publication as
+separate decisions. Move approved material to `docs/`, `assets/` or `review/`
+only when its durable documentation role is clear.
 
 Staging and unstaging do not require a control word, but perform them only when
 I specifically request the index action or authorize the corresponding commit.

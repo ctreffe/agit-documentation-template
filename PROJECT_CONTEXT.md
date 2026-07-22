@@ -110,7 +110,7 @@ Reviewed derivatives:
 - Active maintained source files: TBD
 - Latest validated render: TBD
 - Latest link, screenshot and visual-QA status: TBD
-- Active feedback artifact or review: TBD
+- Active feedback file or review: TBD
 - Active review scope and source state: TBD
 - Feedback decision state and next action: TBD
 
@@ -127,8 +127,8 @@ Reviewed derivatives:
 - DOCX review scope and render method: TBD
 - PDF review purpose and render method: TBD
 - External-feedback curation convention: TBD
-- Local review-artifact location: `review/rendered/` and `review/annotated/`
-- Assistant access, Git versioning and publication rules for review artifacts:
+- Local review-file location: `review/rendered/` and `review/annotated/`
+- Assistant access, Git versioning and publication rules for review files:
   TBD
 
 ## Documentation structure

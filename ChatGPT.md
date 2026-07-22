@@ -50,7 +50,7 @@ Technical documentation often contains screenshots, URLs, system names, logs, us
 
 Before reading or incorporating raw sources, screenshots, exports, logs, or operational data, the assistant should ask whether they may contain sensitive or personal information. If needed, the assistant should request sanitized derivatives instead of raw material.
 
-Screenshots and visual artifacts should be reviewed for sensitive information before they are committed or published.
+Screenshots and visual files should be reviewed for sensitive information before they are committed or published.
 
 Assistant access to a source or sanitized derivative, Git versioning and
 publication or other sharing are separate maintainer decisions. Approval for
@@ -67,7 +67,7 @@ Generated documentation can disclose sensitive information through small
 tables, screenshots, URLs, labels, hover text, embedded resources, archives or
 file metadata even when raw sources are absent. Review these output surfaces
 before versioning or publication. Automated privacy, secret or content checks
-are warning systems, not proof that an artifact is safe.
+are warning systems, not proof that a file is safe.
 
 ## 7. Link and source discipline
 
@@ -79,7 +79,7 @@ The assistant should avoid vague link text such as "here" when a descriptive lab
 
 Screenshots, diagrams, and visual examples should clarify real tasks, states, decisions, or interfaces. They should not be decorative filler.
 
-Visual artifacts should be current, readable, consistently named, and connected to the text that uses them. If a visual is generated or edited, the repository should make that status clear.
+Visual files should be current, readable, consistently named, and connected to the text that uses them. If a visual is generated or edited, the repository should make that status clear.
 
 ## 9. Decisions
 
@@ -145,13 +145,13 @@ summary and description.
 ## 13. Feedback workflow
 
 Maintained repository sources remain authoritative. Rendered or annotated DOCX
-and PDF files are review artifacts; accepted feedback must be transferred back
+and PDF files are review copies; accepted feedback must be transferred back
 to the source and validated there. Use `FEEDBACK_WORKFLOW.md` for the complete
 process.
 
 DOCX comments and Track Changes are preferred for content, structure and
 terminology review. Annotated PDFs are preferred for layout, pagination,
-tables, figures and print QA. Website review artifacts must name the page,
+tables, figures and print QA. Website review files must name the page,
 chapter, selected bundle or snapshot they cover.
 
 Feedback from external reviewers is review input, not an automatic instruction

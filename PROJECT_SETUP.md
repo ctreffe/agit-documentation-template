@@ -35,7 +35,7 @@ only as a deliberate, documented maintainer exception.
    - Sanitization or redaction requirements.
    - Which raw sources or reviewed derivatives the assistant may inspect.
    - Which reviewed derivatives and generated outputs may be versioned.
-   - Which artifacts may be published or otherwise shared.
+   - Which files may be published or otherwise shared.
    - Which `.gitignore` rules must exist before source files are added to the
      working tree.
    - Which automated checks may warn about disclosure risks without being
@@ -57,11 +57,11 @@ only as a deliberate, documented maintainer exception.
    - Direct source comments, DOCX comments and Track Changes, annotated PDF or
      project-specific alternatives.
    - Explicit page, chapter, bundle or snapshot scope for generated review
-     artifacts.
+     files.
    - Maintainer curation of external feedback, by default with `Maintainer:`
      comments.
    - Local storage, assistant access, Git versioning and publication rules for
-     review artifacts.
+     review files.
    - Transfer of accepted feedback back to authoritative source files.
 
 9. Adapt template files.
